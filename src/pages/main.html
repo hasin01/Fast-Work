@@ -1,11 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/Fast-Work/assets/main-CiHvyXfK.js"></script>
+    <link rel="stylesheet" crossorigin href="/Fast-Work/assets/main-DWK7RTlU.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <nav class="nav">
+          <a class="logo">FastWork.</a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="notification"  />
+            </li>
+            <li class="nav-list-item">
+              <a href="">
+                <img
+                  class="userphoto"
+                  src="./src/img/userphoto.png"
+                  alt=""
+                  sizes=""
+              /></a>
+            </li>
+            <li class="nav-list-item">
+              <button class="notification">
+                <img
+                  class="notification"
+                  src="./src/img/notification_non_active.svg"
+                  alt=""
+                  sizes=""
+                />
+              </button>
+            </li>
+            <li class="nav-list-item">
+              <button class="burger">
+                <img
+                  class="burger"
+                  src="./src/img/burg-menu.svg"
+                  alt=""
+                  sizes=""
+                />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="conteiner">
+        <div class="navigation-item">
+          <ul class="navigation-list">
+            <li><img src="data:image/svg+xml,%3csvg%20width='13.000000'%20height='14.000000'%20viewBox='0%200%2013%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector'%20d='M8.5%2013.5L8.5%208.02C8.5%207.84%208.42%207.67%208.3%207.54C8.17%207.41%208%207.34%207.83%207.34L5.16%207.34C4.99%207.34%204.82%207.41%204.69%207.54C4.57%207.67%204.5%207.84%204.5%208.02L4.5%2013.5M0.62%205.39C0.7%205.21%200.82%205.05%200.97%204.92L5.63%200.82C5.87%200.61%206.18%200.5%206.5%200.5C6.81%200.5%207.12%200.61%207.36%200.82L12.02%204.92C12.17%205.05%2012.29%205.21%2012.37%205.39C12.45%205.57%2012.5%205.77%2012.5%205.97L12.5%2012.13C12.5%2012.49%2012.35%2012.84%2012.1%2013.09C11.85%2013.35%2011.52%2013.5%2011.16%2013.5L1.83%2013.5C1.47%2013.5%201.14%2013.35%200.89%2013.09C0.64%2012.84%200.5%2012.49%200.5%2012.13L0.5%205.97C0.5%205.77%200.54%205.57%200.62%205.39Z'%20stroke='%237A7A7E'%20stroke-opacity='1.000000'%20stroke-width='1.000000'%20stroke-linejoin='round'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="home" /></li>
+            <li><a class="navigation-list-item" href="/Fast-Work/src/pages/main.html">Головна</a></li>
+            <li><img src="data:image/svg+xml,%3csvg%20width='14.007812'%20height='6.943359'%20viewBox='0%200%2014.0078%206.94336'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector%201'%20d='M0.39%201.76L0.36%201.77C-0.07%201.41%20-0.13%200.79%200.23%200.36C0.59%20-0.07%201.21%20-0.13%201.64%200.23L1.64%200.26L0.39%201.76ZM12.36%200.26L12.36%200.23C12.79%20-0.13%2013.41%20-0.07%2013.77%200.36C14.13%200.79%2014.07%201.41%2013.64%201.77L13.61%201.76L12.36%200.26Z'%20fill='%23F1F1F1'%20fill-opacity='1.000000'%20fill-rule='nonzero'/%3e%3cpath%20id='Vector%201'%20d='M1%201L6.87%205.89C6.95%205.95%207.05%205.95%207.13%205.89L13%201'%20stroke='%237A7A7E'%20stroke-opacity='1.000000'%20stroke-width='2.000000'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="catalog" /></li>
+            <li><a class="navigation-list-item" href="">Каталог</a></li>
+          </ul>
+        </div>
+        <h1 class="title-work">Робота поруч – вакансії по всій Україні!</h1>
+
+        <form class="form-work" action="work">
+          <input
+            class="form-work-item want-work__placeholder"
+            type="text"
+            id="want_work"
+            name="want_work"
+            placeholder="Ким хочете працювати?"
+          />
+          <div class="want-work"></div>
+          <input
+            class="form-work-item country__placeholder"
+            type="text"
+            id="Country"
+            name="Country"
+            placeholder="Країна"
+          />
+          <input
+            class="form-work-item city__placeholder"
+            type="text"
+            id="City"
+            name="City"
+            placeholder="Місто"
+          />
+          <input
+            class="form-work-item address__placeholde"
+            type="text"
+            id="Address"
+            name="Address"
+            placeholder="Адреса"
+          />
+          <input class="work-button" type="submit" value="Пошук" />
+        </form>
+        <section class="sort">
+          <p class="sort-title">Cортувати за</p>
+          <ul class="sort-list">
+            <li class="sort-item sort-money">Ціною</li>
+            <li class="sort-item sort-location">Відстанню</li>
+            <li class="sort-item sort-clock">Часом</li>
+          </ul>
+          <button class="sort-button">+ Обрати категорії</button>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="custom-checkbox" />
+            <label for="checkbox1" class="checkbox-sort"
+              >Показувати неактивні</label
+            >
+          </div>
+          <button class="clean-filter">Очистити фільтр</button>
+        </section>
+        <div class="visitors"><span>245 </span>відвідувачів за добу</div>
+      </div>
+      <section class="work-card-section">
+        <div class="conteiner">
+          <ul class="work-card-wraper">
+            <li class="work-card">
+              <ul class="work-card-element">
+                <li class="work-card-element-top">
+                  <div class="work-card-flex">
+                    <span class="work-card-state">Активний</span>
+                    <span class="work-card-timeend">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info">
+                  <div class="work-card-vacancy">Вивантаwжити продукцію</div>
+                  <div class="work-card-addres">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork">
+                    Початок робіт:
+                    <span class="work-card-startwork-data">24.10.2024</span
+                    ><span class="work-card-startwork-time">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper">
+                  <ul class="work-card-element-requirements">
+                    <li
+                      class="work-card-element-requirements-payment work-icon"
+                    >
+                      250 грн/год
+                    </li>
+                    <li class="work-card-element-requirements-time work-icon">
+                      1 година
+                    </li>
+                    <li class="work-card-element-requirements-people work-icon">
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite">
+                    <img src="data:image/svg+xml,%3csvg%20width='32.000000'%20height='32.000000'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs%3e%3cclipPath%20id='clip196_10073'%3e%3crect%20id='Property%201=non%20active'%20rx='0.000000'%20width='31.000000'%20height='31.000000'%20transform='translate(0.500000%200.500000)'%20fill='white'%20fill-opacity='0'/%3e%3c/clipPath%3e%3c/defs%3e%3crect%20id='Property%201=non%20active'%20rx='0.000000'%20width='31.000000'%20height='31.000000'%20transform='translate(0.500000%200.500000)'%20fill='%23FFFFFF'%20fill-opacity='0'/%3e%3cg%20clip-path='url(%23clip196_10073)'%3e%3cpath%20id='Vector'%20d='M29.33%2011.33C29.33%209.38%2028.56%207.52%2027.18%206.14C25.81%204.77%2023.94%204%2022%204C19.65%204%2018%204.66%2016%206.66C14%204.66%2012.34%204%2010%204C8.05%204%206.19%204.77%204.81%206.14C3.43%207.52%202.66%209.38%202.66%2011.33C2.66%2014.4%204.66%2016.73%206.66%2018.66L16%2028L25.33%2018.66C27.32%2016.71%2029.33%2014.38%2029.33%2011.33Z'%20stroke='%237A7A7E'%20stroke-opacity='1.000000'%20stroke-width='2.000000'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="work-card">
+              <ul class="work-card-element">
+                <li class="work-card-element-top">
+                  <div class="work-card-flex">
+                    <span class="work-card-state">Активний</span>
+                    <span class="work-card-timeend">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info">
+                  <div class="work-card-vacancy">Вивантаwжити продукцію</div>
+                  <div class="work-card-addres">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork">
+                    Початок робіт:
+                    <span class="work-card-startwork-data">24.10.2024</span
+                    ><span class="work-card-startwork-time">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper">
+                  <ul class="work-card-element-requirements">
+                    <li
+                      class="work-card-element-requirements-payment work-icon"
+                    >
+                      250 грн/год
+                    </li>
+                    <li class="work-card-element-requirements-time work-icon">
+                      1 година
+                    </li>
+                    <li class="work-card-element-requirements-people work-icon">
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite">
+                    <img src="data:image/svg+xml,%3csvg%20width='32.000000'%20height='32.000000'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs%3e%3cclipPath%20id='clip196_10073'%3e%3crect%20id='Property%201=non%20active'%20rx='0.000000'%20width='31.000000'%20height='31.000000'%20transform='translate(0.500000%200.500000)'%20fill='white'%20fill-opacity='0'/%3e%3c/clipPath%3e%3c/defs%3e%3crect%20id='Property%201=non%20active'%20rx='0.000000'%20width='31.000000'%20height='31.000000'%20transform='translate(0.500000%200.500000)'%20fill='%23FFFFFF'%20fill-opacity='0'/%3e%3cg%20clip-path='url(%23clip196_10073)'%3e%3cpath%20id='Vector'%20d='M29.33%2011.33C29.33%209.38%2028.56%207.52%2027.18%206.14C25.81%204.77%2023.94%204%2022%204C19.65%204%2018%204.66%2016%206.66C14%204.66%2012.34%204%2010%204C8.05%204%206.19%204.77%204.81%206.14C3.43%207.52%202.66%209.38%202.66%2011.33C2.66%2014.4%204.66%2016.73%206.66%2018.66L16%2028L25.33%2018.66C27.32%2016.71%2029.33%2014.38%2029.33%2011.33Z'%20stroke='%237A7A7E'%20stroke-opacity='1.000000'%20stroke-width='2.000000'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="work-card">
+              <ul class="work-card-element">
+                <li class="work-card-element-top">
+                  <div class="work-card-flex">
+                    <span class="work-card-state">Активний</span>
+                    <span class="work-card-timeend">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info">
+                  <div class="work-card-vacancy">Вивантаwжити продукцію</div>
+                  <div class="work-card-addres">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork">
+                    Початок робіт:
+                    <span class="work-card-startwork-data">24.10.2024</span
+                    ><span class="work-card-startwork-time">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper">
+                  <ul class="work-card-element-requirements">
+                    <li
+                      class="work-card-element-requirements-payment work-icon"
+                    >
+                      250 грн/год
+                    </li>
+                    <li class="work-card-element-requirements-time work-icon">
+                      1 година
+                    </li>
+                    <li class="work-card-element-requirements-people work-icon">
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite">
+                    <img src="data:image/svg+xml,%3csvg%20width='32.000000'%20height='32.000000'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs%3e%3cclipPath%20id='clip196_10073'%3e%3crect%20id='Property%201=non%20active'%20rx='0.000000'%20width='31.000000'%20height='31.000000'%20transform='translate(0.500000%200.500000)'%20fill='white'%20fill-opacity='0'/%3e%3c/clipPath%3e%3c/defs%3e%3crect%20id='Property%201=non%20active'%20rx='0.000000'%20width='31.000000'%20height='31.000000'%20transform='translate(0.500000%200.500000)'%20fill='%23FFFFFF'%20fill-opacity='0'/%3e%3cg%20clip-path='url(%23clip196_10073)'%3e%3cpath%20id='Vector'%20d='M29.33%2011.33C29.33%209.38%2028.56%207.52%2027.18%206.14C25.81%204.77%2023.94%204%2022%204C19.65%204%2018%204.66%2016%206.66C14%204.66%2012.34%204%2010%204C8.05%204%206.19%204.77%204.81%206.14C3.43%207.52%202.66%209.38%202.66%2011.33C2.66%2014.4%204.66%2016.73%206.66%2018.66L16%2028L25.33%2018.66C27.32%2016.71%2029.33%2014.38%2029.33%2011.33Z'%20stroke='%237A7A7E'%20stroke-opacity='1.000000'%20stroke-width='2.000000'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="return-back">Показати ще</button>
+          <div class="stik">
+            <a><img src="data:image/svg+xml,%3csvg%20width='17.007812'%20height='27.000000'%20viewBox='0%200%2017.0078%2027'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cpath%20id='Vector%204'%20d='M8.5%2026L8.5%201M16%2010.52L8.5%201L1%2010.52'%20stroke='%237A7A7E'%20stroke-opacity='1.000000'%20stroke-width='2.000000'%20stroke-linejoin='round'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="" /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="conteiner">
+        <section class="lang">
+          <div class="lang-v lang-language">
+            Мова сайту: <span class="lang-v-select">UA</span>
+          </div>
+          <div class="lang-v lang-currency">
+            Валюта на сайті: <span class="lang-v-select">UAH</span>
+          </div>
+        </section>
+        <section class="footer-nav">
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Контакти</a></li>
+            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Про нас</a></li>
+            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Каталог</a></li>
+            <li class="footer-navigation-item"><a  class="footer-navigation-item-link" href="">Головна</a></li>
+          </ul>
+        </section>
+        <section class="footer-nav-dok">
+          <a  class="footer-nav-dok-link" href="">Умови використання</a>
+          <a class="footer-nav-dok-link" href="">Документи</a>
+        </section>
+        <a class="footer-email-link" href="mailto:emailsupport@gmail.com">emailsupport@gmail.com</a>
+        <section class="footer-pay">
+          <ul class="footer-pay-list">
+            <li class="footer-pay-list-item">
+              <img src="./src/img/prostir_logo.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="./src/img/easypay.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="./src/img/MasterCard.svg.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="./src/img/Visa.svg" alt="" />
+            </li>
+          </ul>
+        </section>
+        <a class="footer-link" href="">© Copyright</a>
+      </div>
+    </footer>
+  </body>
 </html>
