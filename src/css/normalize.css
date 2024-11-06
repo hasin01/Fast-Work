@@ -357,3 +357,6 @@ https://serp.co/tools/css-reset/
     color: inherit;
     background-color: transparent;
   }
+  p{
+    margin: 0;
+  }
