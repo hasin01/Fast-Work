@@ -1,11 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <nav class="nav">
+          <a class="logo">FastWork.</a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="notification"  />
+            </li>
+            <li class="nav-list-item">
+              <a href="">
+                <img
+                  class="userphoto"
+                  src="./src/img/userphoto.png"
+                  alt=""
+                  sizes=""
+              /></a>
+            </li>
+            <li class="nav-list-item">
+              <button class="notification">
+                <img
+                  class="notification"
+                  src="./src/img/notification_non_active.svg"
+                  alt=""
+                  sizes=""
+                />
+              </button>
+            </li>
+            <li class="nav-list-item">
+              <button class="burger">
+                <img
+                  class="burger"
+                  src="./src/img/burg-menu.svg"
+                  alt=""
+                  sizes=""
+                />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="conteiner">
+        <div class="navigation-item">
+          <ul class="navigation-list">
+            <li><img src="/src/img/home.svg" alt="home" /></li>
+            <li><a class="navigation-list-item" href="/Fast-Work/src/pages/main.html">Головна</a></li>
+            <li><img src="/src/img/arrow.svg" alt="catalog" /></li>
+            <li><a class="navigation-list-item" href="">Каталог</a></li>
+          </ul>
+        </div>
+        <h1 class="title-work">Робота поруч – вакансії по всій Україні!</h1>
+
+        <form class="form-work" action="work">
+          <input
+            class="form-work-item want-work__placeholder"
+            type="text"
+            id="want_work"
+            name="want_work"
+            placeholder="Ким хочете працювати?"
+          />
+          <div class="want-work"></div>
+          <input
+            class="form-work-item country__placeholder"
+            type="text"
+            id="Country"
+            name="Country"
+            placeholder="Країна"
+          />
+          <input
+            class="form-work-item city__placeholder"
+            type="text"
+            id="City"
+            name="City"
+            placeholder="Місто"
+          />
+          <input
+            class="form-work-item address__placeholde"
+            type="text"
+            id="Address"
+            name="Address"
+            placeholder="Адреса"
+          />
+          <input class="work-button" type="submit" value="Пошук" />
+        </form>
+        <section class="sort">
+          <p class="sort-title">Cортувати за</p>
+          <ul class="sort-list">
+            <li class="sort-item sort-money">Ціною</li>
+            <li class="sort-item sort-location">Відстанню</li>
+            <li class="sort-item sort-clock">Часом</li>
+          </ul>
+          <button class="sort-button">+ Обрати категорії</button>
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" class="custom-checkbox" />
+            <label for="checkbox1" class="checkbox-sort"
+              >Показувати неактивні</label
+            >
+          </div>
+          <button class="clean-filter">Очистити фільтр</button>
+        </section>
+        <div class="visitors"><span>245 </span>відвідувачів за добу</div>
+      </div>
+      <section class="work-card-section">
+        <div class="conteiner">
+          <ul class="work-card-wraper">
+            <li class="work-card">
+              <ul class="work-card-element">
+                <li class="work-card-element-top">
+                  <div class="work-card-flex">
+                    <span class="work-card-state">Активний</span>
+                    <span class="work-card-timeend">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info">
+                  <div class="work-card-vacancy">Вивантаwжити продукцію</div>
+                  <div class="work-card-addres">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork">
+                    Початок робіт:
+                    <span class="work-card-startwork-data">24.10.2024</span
+                    ><span class="work-card-startwork-time">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper">
+                  <ul class="work-card-element-requirements">
+                    <li
+                      class="work-card-element-requirements-payment work-icon"
+                    >
+                      250 грн/год
+                    </li>
+                    <li class="work-card-element-requirements-time work-icon">
+                      1 година
+                    </li>
+                    <li class="work-card-element-requirements-people work-icon">
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite">
+                    <img src="/src/img/favorite_no_active.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="work-card">
+              <ul class="work-card-element">
+                <li class="work-card-element-top">
+                  <div class="work-card-flex">
+                    <span class="work-card-state">Активний</span>
+                    <span class="work-card-timeend">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info">
+                  <div class="work-card-vacancy">Вивантаwжити продукцію</div>
+                  <div class="work-card-addres">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork">
+                    Початок робіт:
+                    <span class="work-card-startwork-data">24.10.2024</span
+                    ><span class="work-card-startwork-time">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper">
+                  <ul class="work-card-element-requirements">
+                    <li
+                      class="work-card-element-requirements-payment work-icon"
+                    >
+                      250 грн/год
+                    </li>
+                    <li class="work-card-element-requirements-time work-icon">
+                      1 година
+                    </li>
+                    <li class="work-card-element-requirements-people work-icon">
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite">
+                    <img src="/src/img/favorite_no_active.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="work-card">
+              <ul class="work-card-element">
+                <li class="work-card-element-top">
+                  <div class="work-card-flex">
+                    <span class="work-card-state">Активний</span>
+                    <span class="work-card-timeend">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info">
+                  <div class="work-card-vacancy">Вивантаwжити продукцію</div>
+                  <div class="work-card-addres">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork">
+                    Початок робіт:
+                    <span class="work-card-startwork-data">24.10.2024</span
+                    ><span class="work-card-startwork-time">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper">
+                  <ul class="work-card-element-requirements">
+                    <li
+                      class="work-card-element-requirements-payment work-icon"
+                    >
+                      250 грн/год
+                    </li>
+                    <li class="work-card-element-requirements-time work-icon">
+                      1 година
+                    </li>
+                    <li class="work-card-element-requirements-people work-icon">
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite">
+                    <img src="/src/img/favorite_no_active.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="return-back">Показати ще</button>
+          <div class="stik">
+            <a><img src="/src/img/arrow-stick.svg" alt="" /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="conteiner">
+        <section class="lang">
+          <div class="lang-v lang-language">
+            Мова сайту: <span class="lang-v-select">UA</span>
+          </div>
+          <div class="lang-v lang-currency">
+            Валюта на сайті: <span class="lang-v-select">UAH</span>
+          </div>
+        </section>
+        <section class="footer-nav">
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Контакти</a></li>
+            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Про нас</a></li>
+            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Каталог</a></li>
+            <li class="footer-navigation-item"><a  class="footer-navigation-item-link" href="">Головна</a></li>
+          </ul>
+        </section>
+        <section class="footer-nav-dok">
+          <a  class="footer-nav-dok-link" href="">Умови використання</a>
+          <a class="footer-nav-dok-link" href="">Документи</a>
+        </section>
+        <a class="footer-email-link" href="mailto:emailsupport@gmail.com">emailsupport@gmail.com</a>
+        <section class="footer-pay">
+          <ul class="footer-pay-list">
+            <li class="footer-pay-list-item">
+              <img src="./src/img/prostir_logo.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="./src/img/easypay.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="./src/img/MasterCard.svg.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="./src/img/Visa.svg" alt="" />
+            </li>
+          </ul>
+        </section>
+        <a class="footer-link" href="">© Copyright</a>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>
