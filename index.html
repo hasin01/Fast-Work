@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/inet.svg" />
     <link rel="stylesheet" href="../Fast-Work/src/css/style.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FastWork</title>
   </head>
@@ -77,10 +78,44 @@
           </div>
           <section class="section-work-list">
             <ul class="main-work-list">
-              <li class="main-work-list-item"><img class="main-work-list-item-img" src="./src/img/phone.svg" alt=""> <p class="main-work-list-item-dis">Прямий зв'язок із замовником</p></li>
-              <li class="main-work-list-item"><img class="main-work-list-item-img" src="./src/img/give.svg" alt=""><p class="main-work-list-item-dis">Прозора система оплати</p></li>
-              <li class="main-work-list-item"><img class="main-work-list-item-img" src="./src/img/shake.svg" alt=""><p  class="main-work-list-item-dis">Легкий пошук працівників без посередників</p></li>
-              <li class="main-work-list-item"><img class="main-work-list-item-img" src="./src/img/yes.svg" alt=""><p  class="main-work-list-item-dis">Швидке вирішення всіх задач</p></li>
+              <li class="main-work-list-item">
+                <img
+                  class="main-work-list-item-img"
+                  src="./src/img/phone.svg"
+                  alt=""
+                />
+                <p class="main-work-list-item-dis">
+                  Прямий зв'язок із замовником
+                </p>
+              </li>
+              <li class="main-work-list-item">
+                <img
+                  class="main-work-list-item-img"
+                  src="./src/img/give.svg"
+                  alt=""
+                />
+                <p class="main-work-list-item-dis">Прозора система оплати</p>
+              </li>
+              <li class="main-work-list-item">
+                <img
+                  class="main-work-list-item-img"
+                  src="./src/img/shake.svg"
+                  alt=""
+                />
+                <p class="main-work-list-item-dis">
+                  Легкий пошук працівників без посередників
+                </p>
+              </li>
+              <li class="main-work-list-item">
+                <img
+                  class="main-work-list-item-img"
+                  src="./src/img/yes.svg"
+                  alt=""
+                />
+                <p class="main-work-list-item-dis">
+                  Швидке вирішення всіх задач
+                </p>
+              </li>
             </ul>
           </section>
         </div>
@@ -88,53 +123,354 @@
 
       <section class="vacansy">
         <div class="conteiner">
-          <h2 class="vacansy-title">
-            Актуальні вакансії
-          </h2>
-         <ul>
-          <li class="work-card">
-            <ul class="work-card-element">
-              <li class="work-card-element-top">
-                <div class="work-card-flex">
-                  <span class="work-card-state">Активний</span>
-                  <span class="work-card-timeend">20:17</span>
-                </div>
-                <span class="work-card-uploadtime">13 хв тому</span>
-              </li>
-              <li class="work-card-element-info">
-                <div class="work-card-vacancy">Вивантаwжити продукцію</div>
-                <div class="work-card-addres">
-                  м. Львів, Франківський район 2.1 км
-                </div>
-                <div class="work-card-startwork">
-                  Початок робіт:
-                  <span class="work-card-startwork-data">24.10.2024</span
-                  ><span class="work-card-startwork-time">16:00</span>
-                </div>
-              </li>
-              <li class="work-card-element-requirements-wraper">
-                <ul class="work-card-element-requirements">
-                  <li
-                    class="work-card-element-requirements-payment work-icon"
-                  >
-                    250 грн/год
-                  </li>
-                  <li class="work-card-element-requirements-time work-icon">
-                    1 година
-                  </li>
-                  <li class="work-card-element-requirements-people work-icon">
-                    3 людини
-                  </li>
-                </ul>
-                <button class="work-card-element-favorite">
-                  <img src="/src/img/favorite_no_active.svg" d />
-                </button>
-              </li>
-            </ul>
-          </li>
-         </ul>
+          <h2 class="vacansy-title">Актуальні вакансії</h2>
+          <ul></ul>
         </div>
       </section>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="work-card-swiper">
+              <ul class="work-card-element-swiper">
+                <li class="work-card-element-top-swiper">
+                  <div class="work-card-flex-swiper">
+                    <span class="work-card-state-swiper">Активний</span>
+                    <span class="work-card-timeend-swiper">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime-swiper">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info-swiper">
+                  <div class="work-card-vacancy-swiper">
+                    Вивантаwжити продукцію
+                  </div>
+                  <div class="work-card-addres-swiper">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork-swiper">
+                    Початок робіт:
+                    <span class="work-card-startwork-data-swiper"
+                      >24.10.2024</span
+                    ><span class="work-card-startwork-time-swiper">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper-swiper">
+                  <ul class="work-card-element-requirements-swiper">
+                    <li
+                      class="work-card-element-requirements-payment-swiper work-icon-swiper"
+                    >
+                      250 грн/год
+                    </li>
+                    <li
+                      class="work-card-element-requirements-time-swiper work-icon-swiper"
+                    >
+                      1 година
+                    </li>
+                    <li
+                      class="work-card-element-requirements-people-swiper work-icon-swiper"
+                    >
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite-swiper">
+                    <img src="/src/img/favorite_no_active.svg" d />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="work-card-swiper">
+              <ul class="work-card-element-swiper">
+                <li class="work-card-element-top-swiper">
+                  <div class="work-card-flex-swiper">
+                    <span class="work-card-state-swiper">Активний</span>
+                    <span class="work-card-timeend-swiper">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime-swiper">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info-swiper">
+                  <div class="work-card-vacancy-swiper">
+                    Вивантаwжити продукцію
+                  </div>
+                  <div class="work-card-addres-swiper">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork-swiper">
+                    Початок робіт:
+                    <span class="work-card-startwork-data-swiper"
+                      >24.10.2024</span
+                    ><span class="work-card-startwork-time-swiper">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper-swiper">
+                  <ul class="work-card-element-requirements-swiper">
+                    <li
+                      class="work-card-element-requirements-payment-swiper work-icon-swiper"
+                    >
+                      250 грн/год
+                    </li>
+                    <li
+                      class="work-card-element-requirements-time-swiper work-icon-swiper"
+                    >
+                      1 година
+                    </li>
+                    <li
+                      class="work-card-element-requirements-people-swiper work-icon-swiper"
+                    >
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite-swiper">
+                    <img src="/src/img/favorite_no_active.svg" d />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="work-card-swiper">
+              <ul class="work-card-element-swiper">
+                <li class="work-card-element-top-swiper">
+                  <div class="work-card-flex-swiper">
+                    <span class="work-card-state-swiper">Активний</span>
+                    <span class="work-card-timeend-swiper">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime-swiper">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info-swiper">
+                  <div class="work-card-vacancy-swiper">
+                    Вивантаwжити продукцію
+                  </div>
+                  <div class="work-card-addres-swiper">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork-swiper">
+                    Початок робіт:
+                    <span class="work-card-startwork-data-swiper"
+                      >24.10.2024</span
+                    ><span class="work-card-startwork-time-swiper">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper-swiper">
+                  <ul class="work-card-element-requirements-swiper">
+                    <li
+                      class="work-card-element-requirements-payment-swiper work-icon-swiper"
+                    >
+                      250 грн/год
+                    </li>
+                    <li
+                      class="work-card-element-requirements-time-swiper work-icon-swiper"
+                    >
+                      1 година
+                    </li>
+                    <li
+                      class="work-card-element-requirements-people-swiper work-icon-swiper"
+                    >
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite-swiper">
+                    <img src="/src/img/favorite_no_active.svg" d />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="work-card-swiper">
+              <ul class="work-card-element-swiper">
+                <li class="work-card-element-top-swiper">
+                  <div class="work-card-flex-swiper">
+                    <span class="work-card-state-swiper">Активний</span>
+                    <span class="work-card-timeend-swiper">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime-swiper">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info-swiper">
+                  <div class="work-card-vacancy-swiper">
+                    Вивантаwжити продукцію
+                  </div>
+                  <div class="work-card-addres-swiper">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork-swiper">
+                    Початок робіт:
+                    <span class="work-card-startwork-data-swiper"
+                      >24.10.2024</span
+                    ><span class="work-card-startwork-time-swiper">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper-swiper">
+                  <ul class="work-card-element-requirements-swiper">
+                    <li
+                      class="work-card-element-requirements-payment-swiper work-icon-swiper"
+                    >
+                      250 грн/год
+                    </li>
+                    <li
+                      class="work-card-element-requirements-time-swiper work-icon-swiper"
+                    >
+                      1 година
+                    </li>
+                    <li
+                      class="work-card-element-requirements-people-swiper work-icon-swiper"
+                    >
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite-swiper">
+                    <img src="/src/img/favorite_no_active.svg" d />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="work-card-swiper">
+              <ul class="work-card-element-swiper">
+                <li class="work-card-element-top-swiper">
+                  <div class="work-card-flex-swiper">
+                    <span class="work-card-state-swiper">Активний</span>
+                    <span class="work-card-timeend-swiper">20:17</span>
+                  </div>
+                  <span class="work-card-uploadtime-swiper">13 хв тому</span>
+                </li>
+                <li class="work-card-element-info-swiper">
+                  <div class="work-card-vacancy-swiper">
+                    Вивантаwжити продукцію
+                  </div>
+                  <div class="work-card-addres-swiper">
+                    м. Львів, Франківський район 2.1 км
+                  </div>
+                  <div class="work-card-startwork-swiper">
+                    Початок робіт:
+                    <span class="work-card-startwork-data-swiper"
+                      >24.10.2024</span
+                    ><span class="work-card-startwork-time-swiper">16:00</span>
+                  </div>
+                </li>
+                <li class="work-card-element-requirements-wraper-swiper">
+                  <ul class="work-card-element-requirements-swiper">
+                    <li
+                      class="work-card-element-requirements-payment-swiper work-icon-swiper"
+                    >
+                      250 грн/год
+                    </li>
+                    <li
+                      class="work-card-element-requirements-time-swiper work-icon-swiper"
+                    >
+                      1 година
+                    </li>
+                    <li
+                      class="work-card-element-requirements-people-swiper work-icon-swiper"
+                    >
+                      3 людини
+                    </li>
+                  </ul>
+                  <button class="work-card-element-favorite-swiper">
+                    <img src="/src/img/favorite_no_active.svg" d />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-swiper">
+          <button class="custom-prev">
+            <img src="/src/img/arrow-left.svg" alt="" />
+          </button>
+          <button class="custom-next">
+            <img src="/src/img/arrow-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <section class="publish-your-ad">
+        <div class="conteiner">
+          <h2 class="publish-your-ad-title">
+            Потрібна допомога? Розмістіть своє оголошення за 2 хвилини!
+          </h2>
+          <ul class="publish-your-ad-list">
+            <li class="publish-your-ad-item">
+              <div class="publish-your-ad-list-icon">1</div>
+              <p class="publish-your-ad-discr">Опиши свою задачу</p>
+            </li>
+            <li class="publish-your-ad-item">
+              <div class="publish-your-ad-list-icon">2</div>
+              <p class="publish-your-ad-discr">
+                Вкажіть кількість працівників і тариф
+              </p>
+            </li>
+            <li class="publish-your-ad-item">
+              <div class="publish-your-ad-list-icon">3</div>
+              <p class="publish-your-ad-discr">Вкажіть час і місце</p>
+            </li>
+            <li class="publish-your-ad-item">
+              <div class="publish-your-ad-list-icon">4</div>
+              <p class="publish-your-ad-discr">
+                Додайте свій контактний номер або месенджер для зв’язку
+              </p>
+            </li>
+          </ul>
+          <button class="publish-your-ad-button">Розмістити оголошення</button>
+        </div>
+      </section>
+
+      <section class="cost-vacancy-section">
+        <div class="conteiner">
+          <h2 class="cost-vacancy-title">Яка ринкова вартість підробітку 2024?</h2>
+          <ul class="cost-vacancy-list">
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Київська область</div>
+              <span class="cost-vacancy-item-desk"><img  class="cost-vacancy-item-img" src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Львівська область</div>
+              <span class="cost-vacancy-item-desk"><img  class="cost-vacancy-item-img" src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Одеська область</div>
+              <span class="cost-vacancy-item-desk"><img  class="cost-vacancy-item-img" src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Запорізька область</div>
+              <span class="cost-vacancy-item-desk"><img  class="cost-vacancy-item-img" src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Полтавська область</div>
+              <span class="cost-vacancy-item-desk"><img  class="cost-vacancy-item-img" src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Вінницька область</div>
+              <span class="cost-vacancy-item-desk"><img  class="cost-vacancy-item-img" src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Миколаївська область</div>
+              <span class="cost-vacancy-item-desk"><img  class="cost-vacancy-item-img" src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title cost-vacancy-item-title-dnepr">
+                Дніпропетровська область
+              </div>
+              <span class="cost-vacancy-item-desk"> <img src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Хмельницька область</div>
+              <span class="cost-vacancy-item-desk"><img src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+            <li class="cost-vacancy-list-item">
+              <div class="cost-vacancy-item-title">Черкаська область</div>
+              <span class="cost-vacancy-item-desk"><img src="./src/img/money-card.svg" alt="">від 133 до 600 грн/год</span>
+            </li>
+          </ul>
+          <p class="cost-vacancy-desk"><span>341</span> нове замовлення за останню годину!</p>
+          <button class="cost-vacancy-button">Перейти до замовлень</button>
+        </div>
+      </section>
+
+      
     </main>
     <footer class="footer">
       <div class="conteiner">
@@ -188,6 +524,7 @@
         <a class="footer-link" href="">© Copyright</a>
       </div>
     </footer>
+
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

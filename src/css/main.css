@@ -1,94 +1,438 @@
-
-
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.stik-down{
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    background: rgb(54, 54, 57);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 72px;
-    }
-.title-main{
-    color: rgb(255, 255, 255);
-font-size: 21px;
-font-weight: 600;
-line-height: 26px;
-padding-top: 219px;
-padding-bottom: 16px;
-text-align: center;
-max-width: 366px;
-
+.stik-down {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: rgb(54, 54, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+}
+.title-main {
+  color: rgb(255, 255, 255);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 26px;
+  padding-top: 219px;
+  padding-bottom: 16px;
+  text-align: center;
+  max-width: 366px;
 }
 
 .description-main {
-color: rgb(122, 122, 126);
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-padding-bottom: 32px;
-text-align: center;
-max-width: 302px;
+  color: rgb(122, 122, 126);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 32px;
+  text-align: center;
+  max-width: 302px;
+}
+.button-main {
+  border-radius: 8px;
+  background: rgb(197, 136, 17);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 10px 16px 12px 16px;
+  margin-bottom: 155px;
+}
+.main-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.main-work-list-item {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.main-work-list-item-img {
+  width: 48px;
+  height: 48px;
+}
+.main-work-list-item-dis {
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 112px;
+}
+.vacansy {
+  margin-top: 60px;
+}
+.vacansy-title {
+  color: rgb(241, 241, 241);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* Скрываем стандартные кнопки */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+} /* Стили для кастомных кнопок */
+.custom-prev,
+.custom-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: rgb(54, 54, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-prev {
+  margin-right: 24px;
+}
+.custom-prev {
+  left: 10px;
+}
+.custom-next {
+  right: 10px;
+}
+.button-swiper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-card-wraper-swiper {
+  margin-top: 40px;
+}
+
+.work-card-swiper {
+  border-radius: 10px;
+  backdrop-filter: blur(54px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+}
+
+.work-card-element-top-swiper {
+  display: flex;
+  justify-content: space-between;
+}
+.work-card-state-swiper {
+  border-radius: 30px;
+  background: rgb(11, 139, 47);
+  padding: 4px 20px 4px 20px;
+  color: rgb(255, 255, 255);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-right: 6px;
+}
+
+.work-card-timeend-swiper::before {
+  content: url("/src/img/card-clock-item.svg");
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.work-card-timeend-swiper {
+  border-radius: 30px;
+  background: rgb(197, 136, 17);
+  padding: 4px 20px 4px 20px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  display: flex;
+}
+.work-card-flex-swiper {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-card-uploadtime-swiper {
+  color: rgb(122, 122, 126);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.work-card-vacancy-swiper {
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-top: 20px;
+}
+.work-card-addres-swiper {
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 12px;
+}
+.work-card-startwork-swiper {
+  color: rgb(122, 122, 126);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 12px;
+}
+.work-card-startwork-data-swiper {
+  color: rgb(241, 241, 241);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0%;
+  padding-left: 8px;
+}
+.work-card-startwork-time-swiper {
+  color: rgb(241, 241, 241);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0%;
+  padding-left: 12px;
+}
+.work-card-element-requirements-swiper {
+  display: flex;
+  margin-top: 20px;
+}
+.work-card-element-requirements-payment-swiper {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 30px;
+  background: rgb(15, 106, 190);
+  padding: 6px 10px;
+  margin-right: 8px;
+}
+.work-card-element-requirements-time-swiper {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 30px;
+  background: rgb(15, 106, 190);
+  padding: 6px 10px;
+}
+.work-card-element-requirements-people-swiper {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 30px;
+  background: rgb(15, 106, 190);
+  padding: 6px 10px;
+  margin-top: 8px;
+}
+
+.work-card-element-requirements-payment-swiper::before {
+  content: url("/src/img/money-card.svg");
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.work-card-element-requirements-time-swiper::before {
+  content: url("/src/img/clock-card.svg");
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.work-card-element-requirements-people-swiper::before {
+  content: url("/src/img/round-card.svg");
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.work-card-element-requirements-wraper-swiper {
+  display: flex;
+  align-items: self-end;
+}
+.work-card-element-requirements-swiper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-icon-swiper {
+  display: flex;
+  align-items: center;
+}
+.work-card-element-favorite-swiper {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.return-back-swiper {
+  border-radius: 8px;
+  background: rgb(15, 106, 190);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 10px 16px 12px 16px;
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+
+.publish-your-ad {
+padding: 60px 0;
+  background: rgba(54, 54, 58, 0.3);
+
+}
+
+.publish-your-ad-title {
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.publish-your-ad-discr {
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.publish-your-ad-item {
+  display: flex;
+  align-items: center;
+}
+.publish-your-ad-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.publish-your-ad-list-icon {
+  border-radius: 100px;
+  min-width: 44px;
+  height: 44px;
+  background: rgb(197, 136, 17);
+  color: rgb(255, 255, 255);
+  font-family: Geologica;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+.publish-your-ad-button {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 8px;
+  background: rgb(15, 106, 190);
+  padding: 10px 16px 12px 16px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 26px;
+
+}
+
+.cost-vacancy {
+padding: 60px 0 60px 0;
+display: flex;
 
 
 }
-.button-main {
-border-radius: 8px;
-background: rgb(197, 136, 17);
+.cost-vacancy-section{
+padding: 60px 0;
+
+
+}
+
+.cost-vacancy-title {
+  color: rgb(241, 241, 241);
+font-family: Geologica;
+font-size: 24px;
+font-weight: 600;
+line-height: 30px;
+text-align: center;
+}
+
+.cost-vacancy-list-item {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+border: 1px solid rgb(54, 54, 57);
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.05);
+padding: 17px;
+margin-bottom: 4px;
+}
+.cost-vacancy-item-title {
+color: rgb(241, 241, 241);
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+padding-left: 4px
+}
+.cost-vacancy-item-title-dnepr{
+  font-size: 12px;
+}
+.cost-vacancy-item-desk {
+color: rgb(255, 255, 255);
+font-family: Geologica;
+font-size: 10px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0%;
+text-align: left;
+border-radius: 30px;
+background: rgb(15, 106, 190);
+padding: 6px 10px 6px 10px;
+display: flex;
+align-items: center
+}
+.cost-vacancy-item-img{
+  padding-right: 5px;
+}
+
+.cost-vacancy-desk {
+color: rgb(122, 122, 126);
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-align: center;
+padding: 24px 0 16px 0;
+}
+.cost-vacancy-button {
 color: rgb(255, 255, 255);
 font-size: 14px;
 font-weight: 600;
 line-height: 18px;
-padding: 10px 16px 12px 16px;
-margin-bottom: 155px;
-
-
-}
-.main-work-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center
-}
-.main-work-list-item{
-    padding:24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-background: rgba(255, 255, 255, 0.05);
-
-
-}
-.main-work-list-item-img{
-    width: 48px;
-    height: 48px;
-}
-.main-work-list-item-dis{
-color: rgb(122, 122, 126);
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0%;
-text-align: center;
-width: 112px;
-
-}
-.vacansy{
-    margin-top: 60px;
-}
-.vacansy-title{
-color: rgb(241, 241, 241);
-font-size: 24px;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 0%;
-text-align: center;
+border-radius: 8px;
+  background: rgb(15, 106, 190);
+  padding: 10px 16px 12px 16px;
+  display: block;
+  margin: 0 auto;
 }
