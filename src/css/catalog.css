@@ -68,6 +68,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+gap: 4px;
+align-items: center;
 }
 .navigation-item {
   padding-top: 24px;
@@ -76,6 +78,26 @@ body {
   color: rgb(122, 122, 126);
   padding-right: 5px;
   padding-left: 5px;
+  
+}
+
+
+
+.navigation-item-menu{
+  display: flex;
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-right: 5px;
+
+}
+.navigation-item-menu-title{
+  margin-left: 6px;
+color: rgb(241, 241, 241);
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
 }
 
 .title-work {

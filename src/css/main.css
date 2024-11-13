@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .stik-down {
   width: 50px;
@@ -22,6 +23,7 @@
   padding-bottom: 16px;
   text-align: center;
   max-width: 366px;
+  z-index: 1;
 }
 
 .description-main {
@@ -70,6 +72,55 @@
   letter-spacing: 0%;
   text-align: center;
   width: 112px;
+}
+.main-icon {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 30px;
+  background: rgb(15, 106, 190);
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 180px;
+  right: 230px;
+  transform: rotate(335deg);
+}
+
+.main-icon::before {
+  content: url("/src/img/money-card.svg");
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.main-icon-title{
+
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 30px;
+  background: rgb(15, 106, 190);
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 295px;
+  right: 2px;
+  transform: rotate(10deg);
+  z-index: 1;
+
+}
+
+.main-icon-title::before{
+  content: url("/src/img/clock-card.svg");
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  
 }
 .vacansy {
   margin-top: 60px;
@@ -304,9 +355,8 @@ overflow: hidden */
 }
 
 .publish-your-ad {
-padding: 60px 0;
+  padding: 60px 0;
   background: rgba(54, 54, 58, 0.3);
-
 }
 
 .publish-your-ad-title {
@@ -317,7 +367,6 @@ padding: 60px 0;
   margin-bottom: 36px;
   text-align: center;
   margin-bottom: 24px;
-
 }
 
 .publish-your-ad-discr {
@@ -360,122 +409,127 @@ padding: 60px 0;
   display: block;
   margin: 0 auto;
   margin-top: 26px;
-
+}
+.publish-your-ad-button-wraper {
+  position: relative;
+}
+.publish-your-ad-button {
+}
+.publish-your-ad-button-icon {
+  border-radius: 30px;
+  background: rgb(11, 139, 47);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  top: -4px;
+  right: 23px;
+  transform: rotate(35deg);
 }
 
 .cost-vacancy {
-padding: 60px 0 60px 0;
-display: flex;
-
-
+  padding: 60px 0 60px 0;
+  display: flex;
 }
-.cost-vacancy-section{
-padding: 60px 0;
-
-
+.cost-vacancy-section {
+  padding: 60px 0;
 }
 
 .cost-vacancy-title {
   color: rgb(241, 241, 241);
-font-family: Geologica;
-font-size: 24px;
-font-weight: 600;
-line-height: 30px;
-text-align: center;
-margin-bottom: 24px;
-
+  font-family: Geologica;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .cost-vacancy-list-item {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-border: 1px solid rgb(54, 54, 57);
-border-radius: 10px;
-background: rgba(255, 255, 255, 0.05);
-padding: 17px;
-margin-bottom: 4px;
+  border: 1px solid rgb(54, 54, 57);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 17px;
+  margin-bottom: 4px;
 }
 .cost-vacancy-item-title {
-color: rgb(241, 241, 241);
-font-size: 14px;
-font-weight: 600;
-line-height: 18px;
-padding-left: 4px
+  color: rgb(241, 241, 241);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding-left: 4px;
 }
-.cost-vacancy-item-title-dnepr{
+.cost-vacancy-item-title-dnepr {
   font-size: 12px;
 }
 .cost-vacancy-item-desk {
-color: rgb(255, 255, 255);
-font-family: Geologica;
-font-size: 10px;
-font-weight: 400;
-line-height: 13px;
-letter-spacing: 0%;
-text-align: left;
-border-radius: 30px;
-background: rgb(15, 106, 190);
-padding: 6px 10px 6px 10px;
-display: flex;
-align-items: center
+  color: rgb(255, 255, 255);
+  font-family: Geologica;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 30px;
+  background: rgb(15, 106, 190);
+  padding: 6px 10px 6px 10px;
+  display: flex;
+  align-items: center;
 }
-.cost-vacancy-item-img{
+.cost-vacancy-item-img {
   padding-right: 5px;
 }
 
 .cost-vacancy-desk {
-color: rgb(122, 122, 126);
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-text-align: center;
-padding: 24px 0 16px 0;
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding: 24px 0 16px 0;
 }
 .cost-vacancy-button {
-color: rgb(255, 255, 255);
-font-size: 14px;
-font-weight: 600;
-line-height: 18px;
-border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 8px;
   background: rgb(15, 106, 190);
   padding: 10px 16px 12px 16px;
   display: block;
   margin: 0 auto;
 }
 
-
-
-.stock-section{
+.stock-section {
   background: rgba(54, 54, 58, 0.3);
   padding: 60px 0;
-
-
 }
-.stock-wraper{
-display: flex;
-flex-direction: column;
-align-items: center;
-
+.stock-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .stock-title {
-color: rgb(241, 241, 241);
-font-size: 20px;
-font-weight: 600;
-line-height: 25px;
-text-align: center;
-margin-bottom: 10px;
-
-
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .stock-disc {
-color: rgb(122, 122, 126);
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-text-align: center;
-max-width: 300px;
-margin-bottom: 40px;
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  max-width: 300px;
+  margin-bottom: 40px;
 }
 .stock-button {
   color: rgb(255, 255, 255);
@@ -483,77 +537,89 @@ margin-bottom: 40px;
   font-weight: 600;
   line-height: 18px;
   border-radius: 8px;
-    background: rgb(15, 106, 190);
-    padding: 10px 16px 12px 16px;
-    display: block;
-    margin: 0 auto;
-  
+  background: rgb(15, 106, 190);
+  padding: 10px 16px 12px 16px;
+  display: block;
+  margin: 0 auto;
 }
-
-
+.stock-button-wraper {
+  position: relative;
+  z-index: 1;
+}
+.stock-button-icon {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  border-radius: 30px;
+  background: rgb(11, 139, 47);
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  top: -9px;
+  right: -60px;
+  transform: rotate(24deg);
+}
 
 .section-reviews {
   padding: 60px 0;
 }
 
 .reviews-title {
-color: rgb(241, 241, 241);
-font-size: 23px;
-font-weight: 600;
-line-height: 30px;
-text-align: center;
-margin-bottom: 16px;
+  color: rgb(241, 241, 241);
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 .reviews-card {
-padding: 20px;
-border-radius: 10px;
-background: rgb(75, 75, 82);
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(75, 75, 82);
 }
-.reviews-card-title-wraper{
+.reviews-card-title-wraper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
-
 }
 .reviews-card-title {
-color: rgb(241, 241, 241);
-font-size: 16px;
-font-weight: 600;
-line-height: 20px;
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
 }
 .reviews-card-descr {
-color: rgb(241, 241, 241);
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-margin-bottom: 16px;
-
+  color: rgb(241, 241, 241);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 16px;
 }
-.reviews-card-user{
+.reviews-card-user {
   display: flex;
   align-items: center;
-margin-bottom: 16px;
-
-
+  margin-bottom: 16px;
 }
 .reviews-card-user-name {
-color: rgb(241, 241, 241);
-font-size: 14px;
-font-weight: 600;
-line-height: 18px;
+  color: rgb(241, 241, 241);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
 }
 .reviews-card-photo {
   margin-right: 8px;
 }
 .reviews-card-time {
-color: rgb(122, 122, 126);
-font-size: 12px;
-font-weight: 400;
-line-height: 15px;
-text-align: right;
+  color: rgb(122, 122, 126);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: right;
 }
-.swiper2 { width: 100%; overflow: hidden;}
-
+.swiper2 {
+  width: 100%;
+  overflow: hidden;
+}
 
 .custom-prev2,
 .custom-next2 {
