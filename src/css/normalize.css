@@ -40,7 +40,9 @@ https://serp.co/tools/css-reset/
    * `article` contexts in Chrome, Firefox, and Safari.
    */
   
-  h1 {
+  h1,
+  h2,
+  h3 {
     font-size: 2em;
     margin: 0;
   }

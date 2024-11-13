@@ -79,8 +79,8 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0%;
   text-align: center;
+  margin-bottom: 24px;
 }
 /* Скрываем стандартные кнопки */
 .swiper-button-prev,
@@ -117,6 +117,9 @@
   width: 100%;
   overflow: hidden;
 }
+
+/* width: 100%;
+overflow: hidden */
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -313,6 +316,8 @@ padding: 60px 0;
   line-height: 25px;
   margin-bottom: 36px;
   text-align: center;
+  margin-bottom: 24px;
+
 }
 
 .publish-your-ad-discr {
@@ -377,6 +382,8 @@ font-size: 24px;
 font-weight: 600;
 line-height: 30px;
 text-align: center;
+margin-bottom: 24px;
+
 }
 
 .cost-vacancy-list-item {
@@ -457,6 +464,8 @@ font-size: 20px;
 font-weight: 600;
 line-height: 25px;
 text-align: center;
+margin-bottom: 10px;
+
 
 }
 .stock-disc {
@@ -479,4 +488,94 @@ margin-bottom: 40px;
     display: block;
     margin: 0 auto;
   
+}
+
+
+
+.section-reviews {
+  padding: 60px 0;
+}
+
+.reviews-title {
+color: rgb(241, 241, 241);
+font-size: 23px;
+font-weight: 600;
+line-height: 30px;
+text-align: center;
+margin-bottom: 16px;
+}
+.reviews-card {
+padding: 20px;
+border-radius: 10px;
+background: rgb(75, 75, 82);
+}
+.reviews-card-title-wraper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+}
+.reviews-card-title {
+color: rgb(241, 241, 241);
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+}
+.reviews-card-descr {
+color: rgb(241, 241, 241);
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+margin-bottom: 16px;
+
+}
+.reviews-card-user{
+  display: flex;
+  align-items: center;
+margin-bottom: 16px;
+
+
+}
+.reviews-card-user-name {
+color: rgb(241, 241, 241);
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+}
+.reviews-card-photo {
+  margin-right: 8px;
+}
+.reviews-card-time {
+color: rgb(122, 122, 126);
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+text-align: right;
+}
+.swiper2 { width: 100%; overflow: hidden;}
+
+
+.custom-prev2,
+.custom-next2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: rgb(54, 54, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-prev2 {
+  margin-right: 24px;
+}
+.custom-prev2 {
+  left: 10px;
+}
+.custom-next2 {
+  right: 10px;
+}
+.button-swiper2 {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
 }
