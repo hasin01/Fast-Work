@@ -47,4 +47,66 @@ a {
   text-decoration: none;
 }
 
+.menu-burder {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px 24px 24px;
+  border: 1px solid rgb(54, 54, 57);
+  border-radius: 0px 0px 7px 7px;
+  background: rgb(75, 75, 82);
+  display: none;
+  position: absolute;
+  top: 72px;
+  width: 275px;
+  height: 537px;
+  z-index: 1000;
+  right: -100%; /* Начальное положение за пределами экрана справа */
+  z-index: 1001; /* Обеспечиваем, чтобы меню было над оверлеем */
+  pointer-events: auto; /* Отключаем блокировку кликов для меню */
+  transition: right 0.3s ease;
+}
 
+.menu-burder.open {
+  right: 15px; /* Положение, когда меню выехало */
+}
+
+.menu-burger-button {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  border-radius: 8px;
+  background: rgb(15, 106, 190);
+  padding: 10px 16px 12px 16px;
+}
+
+.menu-burder-item-link {
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.menu-burder-item {
+  border-bottom: 1px solid white;
+}
+
+#menu-icon {
+  width: auto;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.burger.open #menu-icon {
+  transform: rotate(90deg);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
