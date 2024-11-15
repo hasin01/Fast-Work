@@ -60,9 +60,9 @@ a {
   width: 275px;
   height: 537px;
   z-index: 1000;
-  right: -100%; /* Начальное положение за пределами экрана справа */
-  z-index: 1001; /* Обеспечиваем, чтобы меню было над оверлеем */
-  pointer-events: auto; /* Отключаем блокировку кликов для меню */
+  right: -100%; 
+  z-index: 1001; 
+  pointer-events: auto; 
   transition: right 0.3s ease;
 }
 
@@ -88,6 +88,8 @@ a {
 }
 .menu-burder-item {
   border-bottom: 1px solid white;
+  padding-bottom: 16px;
+  margin-top: 20px;
 }
 
 #menu-icon {
@@ -109,4 +111,59 @@ a {
   backdrop-filter: blur(18px);
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+}
+
+
+.burger-menu-home::before {
+  content: url("/src/img/burger-home-icon.svg");
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.menu-burder-item-link{
+  display: flex;
+  align-items: center;
+}
+
+.burger-menu-catalog::before {
+  content: url("/src/img/burger-catalog-icon.svg");
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+
+.burger-menu-user::before {
+  content: url("/src/img/burger-user-icon.svg");
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.burger-menu-ok::before {
+  content: url("/src/img/burger-ok-icon.svg");
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.burger-requests-icon::before {
+  content: url("/src/img/burger-requests-icon.svg");
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.burger-user-round-check::before {
+  content: url("/src/img/burger-user-round-check-icon.svg");
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.burger-log-out-icon::before {
+  content: url("/src/img/burger-log-out-icon.svg");
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
 }

@@ -1,43 +1,6 @@
-// core version + navigation, pagination modules:
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
-// import Swiper and modules styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "./swiper";
 
-// init Swiper:
-const swiper = new Swiper(".swiper", {
-  modules: [Navigation],
-  slidesPerView: 1.1,
-  loop: true,
-  centeredSlides: true,
-  spaceBetween: 10,
-  initialSlide: 2,
-});
 
-document
-  .querySelector(".custom-prev")
-  .addEventListener("click", () => swiper.slidePrev());
-document
-  .querySelector(".custom-next")
-  .addEventListener("click", () => swiper.slideNext());
-
-const swiper2 = new Swiper(".swiper2", {
-  modules: [Navigation],
-  slidesPerView: 1.1,
-  loop: true,
-  centeredSlides: true,
-  spaceBetween: 10,
-  initialSlide: 2,
-});
-
-document
-  .querySelector(".custom-prev2")
-  .addEventListener("click", () => swiper2.slidePrev());
-document
-  .querySelector(".custom-next2")
-  .addEventListener("click", () => swiper2.slideNext());
 
   document.addEventListener("DOMContentLoaded", () => {
     const burger = document.getElementById("burger");
@@ -49,16 +12,30 @@ document
         if (menu.classList.contains('open')) {
             menu.classList.remove('open');
             menu.style.display = 'none';
-            menuIcon.src = './src/img/burg-menu.svg';
+            menuIcon.src = '/Fast-Work/src/img/burg-menu.svg';
             overlay.style.display = 'none';
+            document.body.style.overflow = '';
         } else {
-            menu.style.display = 'block';
+            menu.style.display = 'flex';
             setTimeout(() => menu.classList.add('open'), 10); // Немного подождем, чтобы анимация сработала
-            menuIcon.src = './src/img/burg-menu-clouse.svg';
+            menuIcon.src = '/Fast-Work/src/img/burg-menu-clouse.svg';
             overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
         }
         burger.classList.toggle('open');
     };
 
     burger.addEventListener("click", toggleMenu);
+
+    overlay.addEventListener("click", () => {
+        if (menu.classList.contains('open')) {
+            toggleMenu();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menu.classList.contains('open')) {
+            toggleMenu();
+        }
+    });
 });

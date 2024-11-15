@@ -35,19 +35,33 @@
               </button>
             </li>
             <li class="nav-list-item">
-              <button class="burger">
-                <img
-                  class="burger"
-                  src="/src/img/burg-menu.svg"
-                  alt="burger"
-                />
+              <button class="burger" id="burger">
+                <img class="burger" id="menu-icon" src="/src/img/burg-menu.svg" alt="" />
               </button>
+              <div class="menu-burder" id="menu-burder">
+                <button class="menu-burger-button">+ Створити замовлення</button>
+               <ul class="menu-burder-list">
+               <li class="menu-burder-item "> <a class="menu-burder-item-link burger-menu-home" href="#">Головна</a> </li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-catalog" href="#">Каталог</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-user" href="#">Мій профіль</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-ok" href="#">Виконані замовлення</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-user" href="#">Створені замовлення</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-requests-icon" href="#">Мої заявки</a></li>
+               <li class="menu-burder-item"><a class="menu-burder-item-link burger-user-round-check" href="#">Підписка</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-log-out-icon" href="#">Вийти</a></li>
+                
+               </ul>
+
+
+              </div>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
+    <div class="overlay" id="overlay"></div>
+
       <div class="conteiner">
         <div class="navigation-item">
           <ul class="navigation-list">
