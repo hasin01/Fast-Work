@@ -17,7 +17,7 @@
   padding-right: 16px;
 }
 .header {
-  border-bottom: 1px solid rgb(54, 54, 57);
+  border-bottom: 1px solid var( --background-stik);
   position: relative;
    z-index: 1004;
    background: linear-gradient(
@@ -60,7 +60,7 @@ body {
 }
 
 .logo {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 20px;
   font-weight: 600;
   line-height: 25px;
@@ -87,7 +87,7 @@ gap: 4px;
   padding-top: 24px;
 }
 .navigation-list-item {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   padding-right: 5px;
   padding-left: 5px;
   
@@ -97,7 +97,7 @@ gap: 4px;
 
 .navigation-item-menu{
   display: flex;
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -106,14 +106,14 @@ gap: 4px;
 }
 .navigation-item-menu-title{
   margin-left: 6px;
-color: rgb(241, 241, 241);
+color: var(--title-color);
 font-size: 16px;
 font-weight: 600;
 line-height: 20px;
 }
 
 .title-work {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
@@ -124,16 +124,16 @@ line-height: 20px;
 .form-work {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(54, 54, 57);
+  border: 1px solid var( --background-stik);
   border-radius: 10px;
   padding: 20px;
   backdrop-filter: blur(54px);
-  background: rgb(45, 45, 50);
+  background: var(--background-form);
 }
 .form-work-item {
   margin-bottom: 10px;
   border-radius: 9px;
-  background: rgb(75, 75, 82);
+  background: var(--background-input);
   padding: 10px 16px 12px 16px;
   outline: 0;
   border: 0;
@@ -141,21 +141,19 @@ line-height: 20px;
 }
 .work-button {
   border-radius: 8px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 10px 16px 12px 16px;
   border: 0;
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0%;
 }
 
-.work-button:hover {
-  background-color: #0e3e85;
-}
+
 .want-work__placeholder {
-  background-image: url("/src/img/icons.svg");
+  background-image: url("/img/icons.svg");
   background-repeat: no-repeat;
   background-position: 10px center; /* Позиционирование по оси X и оси Y */
   padding-left: 40px; /* Увеличить отступ слева для текста */
@@ -169,31 +167,31 @@ line-height: 20px;
   margin-top: 6px;
 }
 .country__placeholder {
-  background-image: url("/src/img/country.svg");
+  background-image: url("/img/country.svg");
   background-repeat: no-repeat;
   background-position: 10px center; /* Позиционирование по оси X и оси Y */
   padding-left: 40px; /* Увеличить отступ слева для текста */
   background-size: 24px 24px; /* Размер картинки */
 }
 .city__placeholder {
-  background-image: url("/src/img/icon_map.svg");
+  background-image: url("/img/icon_map.svg");
   background-repeat: no-repeat;
   background-position: 10px center; /* Позиционирование по оси X и оси Y */
   padding-left: 40px; /* Увеличить отступ слева для текста */
   background-size: 24px 24px; /* Размер картинки */
 }
 .address__placeholde {
-  background-image: url("/src/img/map_pinned.svg");
+  background-image: url("/img/map_pinned.svg");
   background-repeat: no-repeat;
   background-position: 10px center; /* Позиционирование по оси X и оси Y */
   padding-left: 40px; /* Увеличить отступ слева для текста */
   background-size: 24px 24px; /* Размер картинки */
 }
 .sort {
-  border: 1px solid rgb(54, 54, 57);
+  border: 1px solid var( --background-stik);
   border-radius: 10px;
   backdrop-filter: blur(54px);
-  background: rgb(45, 45, 50);
+  background: var(--background-form);
   margin-top: 16px;
   padding: 20px;
   display: flex;
@@ -204,14 +202,14 @@ line-height: 20px;
   justify-content: space-between;
 }
 .sort-title {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   display: flex;
 }
 .sort-title::before {
-  content: url("/src/img/Vector.svg");
+  content: url("/img/Vector.svg");
   margin-right: 9px; /* Расстояние между изображением и текстом */
   width: 18px;
   height: 16px;
@@ -220,7 +218,7 @@ line-height: 20px;
 .sort-money,
 .sort-location,
 .sort-clock {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -229,21 +227,21 @@ line-height: 20px;
 }
 
 .sort-money::before {
-  content: url("/src/img/money.svg");
+  content: url("/img/money.svg");
   margin-right: 2px; /* Расстояние между изображением и текстом */
   width: 24px;
   height: 24px;
 }
 
 .sort-location::before {
-  content: url("/src/img/Locate.svg");
+  content: url("/img/Locate.svg");
   margin-right: 2px; /* Расстояние между изображением и текстом */
   width: 24px;
   height: 24px;
 }
 
 .sort-clock::before {
-  content: url("/src/img/clock.svg");
+  content: url("/img/clock.svg");
   margin-right: 2px; /* Расстояние между изображением и текстом */
   width: 24px;
   height: 24px;
@@ -257,24 +255,24 @@ line-height: 20px;
   padding: 10px 16px 12px 16px;
   width: 100%;
   border-radius: 8px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0%;
 }
-.sort-button:hover:focus {
-  background-color: #0e3e85;
+.hover-button:hover:focus {
+  background-color: var(--hover-button);
 }
 .clean-filter {
   margin-left: auto;
   background: none;
   border: none;
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-family: Geologica;
   font-size: 14px;
   font-weight: 600;
@@ -297,7 +295,7 @@ line-height: 20px;
   display: inline-flex;
   align-items: center;
   user-select: none;
-  color: rgb(122, 122, 126); /* Этот цвет будет применяться к тексту */
+  color: var(--title-deskr-color); 
 }
 .custom-checkbox + label::before {
   content: "";
@@ -307,15 +305,15 @@ line-height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
-  background-image: url("/src/img/checkbox_radiobut.svg");
+  background-image: url("/img/checkbox_radiobut.svg");
   margin-right: 0.5em;
 }
 .custom-checkbox:checked + label::before {
-  background-image: url("/src/img/checkbox_radiobut._active.svg");
+  background-image: url("/img/checkbox_radiobut._active.svg");
 }
 
 .visitors {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
@@ -329,7 +327,7 @@ line-height: 20px;
 .work-card {
   border-radius: 10px;
   backdrop-filter: blur(54px);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--backround-work);
   padding: 20px;
   margin-top: 20px;
 }
@@ -339,9 +337,9 @@ line-height: 20px;
 }
 .work-card-state {
   border-radius: 30px;
-  background: rgb(11, 139, 47);
+  background: var(--backround-desr-icon);
   padding: 4px 20px 4px 20px;
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-family: Geologica;
   font-size: 14px;
   font-weight: 400;
@@ -350,16 +348,16 @@ line-height: 20px;
 }
 
 .work-card-timeend::before {
-  content: url("/src/img/card-clock-item.svg");
+  content: url("/img/card-clock-item.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
 }
 .work-card-timeend {
   border-radius: 30px;
-  background: rgb(197, 136, 17);
+  background: var( --backround-button-icon);
   padding: 4px 20px 4px 20px;
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -371,7 +369,7 @@ line-height: 20px;
 }
 
 .work-card-uploadtime {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-family: Geologica;
   font-size: 14px;
   font-weight: 400;
@@ -379,28 +377,28 @@ line-height: 20px;
 }
 
 .work-card-vacancy {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 20px;
   font-weight: 600;
   line-height: 25px;
   padding-top: 20px;
 }
 .work-card-addres {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   padding-top: 12px;
 }
 .work-card-startwork {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   padding-top: 12px;
 }
 .work-card-startwork-data {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -408,7 +406,7 @@ line-height: 20px;
   padding-left: 8px;
 }
 .work-card-startwork-time {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -420,50 +418,50 @@ line-height: 20px;
   margin-top: 20px;
 }
 .work-card-element-requirements-payment {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
   margin-right: 8px;
 }
 .work-card-element-requirements-time {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
 }
 .work-card-element-requirements-people {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
   margin-top: 8px;
 }
 
 .work-card-element-requirements-payment::before {
-  content: url("/src/img/money-card.svg");
+  content: url("/img/money-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
 }
 .work-card-element-requirements-time::before {
-  content: url("/src/img/clock-card.svg");
+  content: url("/img/clock-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
 }
 
 .work-card-element-requirements-people::before {
-  content: url("/src/img/round-card.svg");
+  content: url("/img/round-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
@@ -489,8 +487,8 @@ line-height: 20px;
 }
 .return-back {
   border-radius: 8px;
-  background: rgb(15, 106, 190);
-  color: rgb(255, 255, 255);
+  background: var(--backround-button);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -502,7 +500,7 @@ line-height: 20px;
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: rgb(54, 54, 57);
+  background: var( --background-stik);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -511,7 +509,7 @@ line-height: 20px;
 
 
 .footer{
-  background: rgba(0, 0, 0, 0.15);
+  background: var(--backround-footer);
 }
 .lang{
   display: flex;
@@ -520,7 +518,7 @@ line-height: 20px;
   padding-top:63px ;
 }
 .lang-v{
-color: rgb(122, 122, 126);
+color: var(--title-deskr-color);
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
@@ -532,26 +530,26 @@ align-items: center;
   margin-bottom: 15px;
 }
 .lang-v-select{
-color: rgb(241, 241, 241);
+color: var(--title-color);
 font-size: 14px;
 font-weight: 600;
 line-height: 18px;
 margin-left: 4px;
 }
 .lang-language::before{
-  content: url("/src/img/inet.svg");
+  content: url("/img/inet.svg");
   margin-right: 5px;
   width: 24px;
   height: 24px;
 }
 .lang-currency::before{
-  content: url("/src/img/money-footer.svg");
+  content: url("/img/money-footer.svg");
   margin-right: 5px;
   width: 24px;
   height: 24px;
 }
 .lang-v-select::after{
-  content: url("/src/img/arrow.svg");
+  content: url("/img/arrow.svg");
   margin-left: 5px;
   width: 24px;
   height: 24px;
@@ -564,7 +562,7 @@ margin-left: 4px;
  margin-bottom: 20px;
 }
 .footer-navigation-item-link{
-color: rgb(122, 122, 126);
+color: var(--title-deskr-color);
 font-family: Geologica;
 font-size: 14px;
 font-weight: 400;
@@ -576,13 +574,13 @@ line-height: 18px;
   margin-bottom: 20px;
 }
 .footer-nav-dok-link{
-color: rgb(122, 122, 126);
+color: var(--title-deskr-color);
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
 }
 .footer-email-link{
-color: rgb(122, 122, 126);
+color: var(--title-deskr-color);
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
@@ -603,7 +601,7 @@ margin-bottom: 32px;
 .footer-link{
   display: flex;
   justify-content: center;
-color: rgb(122, 122, 126);
+color: var(--title-deskr-color);
 font-size: 12px;
 font-weight: 400;
 line-height: 15px;

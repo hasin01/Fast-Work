@@ -8,14 +8,14 @@
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: rgb(54, 54, 57);
+  background: var( --background-stik);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 72px;
 }
 .title-main {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 21px;
   font-weight: 600;
   line-height: 26px;
@@ -27,7 +27,7 @@
 }
 
 .description-main {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -37,8 +37,8 @@
 }
 .button-main {
   border-radius: 8px;
-  background: rgb(197, 136, 17);
-  color: rgb(255, 255, 255);
+  background: var( --backround-button-icon);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -58,14 +58,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--backround-work);
 }
 .main-work-list-item-img {
   width: 48px;
   height: 48px;
 }
 .main-work-list-item-dis {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -74,12 +74,12 @@
   width: 112px;
 }
 .main-icon {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@
 }
 
 .main-icon::before {
-  content: url("/src/img/money-card.svg");
+  content: url("/img/money-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
@@ -98,12 +98,12 @@
 
 .main-icon-title{
 
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
   display: flex;
   align-items: center;
@@ -116,7 +116,7 @@
 }
 
 .main-icon-title::before{
-  content: url("/src/img/clock-card.svg");
+  content: url("/img/clock-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
@@ -126,7 +126,7 @@
   margin-top: 60px;
 }
 .vacansy-title {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
@@ -143,7 +143,7 @@
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: rgb(54, 54, 57);
+  background: var( --background-stik);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,7 +184,7 @@ overflow: hidden */
 .work-card-swiper {
   border-radius: 10px;
   backdrop-filter: blur(54px);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--backround-work);
   padding: 20px;
 }
 
@@ -194,9 +194,9 @@ overflow: hidden */
 }
 .work-card-state-swiper {
   border-radius: 30px;
-  background: rgb(11, 139, 47);
+  background: var(--backround-desr-icon);
   padding: 4px 20px 4px 20px;
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-family: Geologica;
   font-size: 14px;
   font-weight: 400;
@@ -205,16 +205,16 @@ overflow: hidden */
 }
 
 .work-card-timeend-swiper::before {
-  content: url("/src/img/card-clock-item.svg");
+  content: url("/img/card-clock-item.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
 }
 .work-card-timeend-swiper {
   border-radius: 30px;
-  background: rgb(197, 136, 17);
+  background: var( --backround-button-icon);
   padding: 4px 20px 4px 20px;
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -226,7 +226,7 @@ overflow: hidden */
 }
 
 .work-card-uploadtime-swiper {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-family: Geologica;
   font-size: 14px;
   font-weight: 400;
@@ -234,28 +234,28 @@ overflow: hidden */
 }
 
 .work-card-vacancy-swiper {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 20px;
   font-weight: 600;
   line-height: 25px;
   padding-top: 20px;
 }
 .work-card-addres-swiper {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   padding-top: 12px;
 }
 .work-card-startwork-swiper {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   padding-top: 12px;
 }
 .work-card-startwork-data-swiper {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -263,7 +263,7 @@ overflow: hidden */
   padding-left: 8px;
 }
 .work-card-startwork-time-swiper {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -275,50 +275,50 @@ overflow: hidden */
   margin-top: 20px;
 }
 .work-card-element-requirements-payment-swiper {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
   margin-right: 8px;
 }
 .work-card-element-requirements-time-swiper {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
 }
 .work-card-element-requirements-people-swiper {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px;
   margin-top: 8px;
 }
 
 .work-card-element-requirements-payment-swiper::before {
-  content: url("/src/img/money-card.svg");
+  content: url("/img/money-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
 }
 .work-card-element-requirements-time-swiper::before {
-  content: url("/src/img/clock-card.svg");
+  content: url("/img/clock-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
 }
 
 .work-card-element-requirements-people-swiper::before {
-  content: url("/src/img/round-card.svg");
+  content: url("/img/round-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
@@ -344,8 +344,8 @@ overflow: hidden */
 }
 .return-back-swiper {
   border-radius: 8px;
-  background: rgb(15, 106, 190);
-  color: rgb(255, 255, 255);
+  background: var(--backround-button);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -360,7 +360,7 @@ overflow: hidden */
 }
 
 .publish-your-ad-title {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 20px;
   font-weight: 600;
   line-height: 25px;
@@ -370,7 +370,7 @@ overflow: hidden */
 }
 
 .publish-your-ad-discr {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -387,8 +387,8 @@ overflow: hidden */
   border-radius: 100px;
   min-width: 44px;
   height: 44px;
-  background: rgb(197, 136, 17);
-  color: rgb(255, 255, 255);
+  background: var( --backround-button-icon);
+  color: var(--title-buutton-color);
   font-family: Geologica;
   font-size: 20px;
   font-weight: 600;
@@ -399,12 +399,12 @@ overflow: hidden */
   margin-right: 12px;
 }
 .publish-your-ad-button {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   border-radius: 8px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 10px 16px 12px 16px;
   display: block;
   margin: 0 auto;
@@ -413,12 +413,11 @@ overflow: hidden */
 .publish-your-ad-button-wraper {
   position: relative;
 }
-.publish-your-ad-button {
-}
+
 .publish-your-ad-button-icon {
   border-radius: 30px;
-  background: rgb(11, 139, 47);
-  color: rgb(255, 255, 255);
+  background: var(--backround-desr-icon);
+  color: var(--title-buutton-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
@@ -438,7 +437,7 @@ overflow: hidden */
 }
 
 .cost-vacancy-title {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-family: Geologica;
   font-size: 24px;
   font-weight: 600;
@@ -451,14 +450,14 @@ overflow: hidden */
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  border: 1px solid rgb(54, 54, 57);
+  border: 1px solid var( --background-stik);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--backround-work);
   padding: 17px;
   margin-bottom: 4px;
 }
 .cost-vacancy-item-title {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -468,7 +467,7 @@ overflow: hidden */
   font-size: 12px;
 }
 .cost-vacancy-item-desk {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-family: Geologica;
   font-size: 10px;
   font-weight: 400;
@@ -476,7 +475,7 @@ overflow: hidden */
   letter-spacing: 0%;
   text-align: left;
   border-radius: 30px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 6px 10px 6px 10px;
   display: flex;
   align-items: center;
@@ -486,7 +485,7 @@ overflow: hidden */
 }
 
 .cost-vacancy-desk {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -494,12 +493,12 @@ overflow: hidden */
   padding: 24px 0 16px 0;
 }
 .cost-vacancy-button {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   border-radius: 8px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 10px 16px 12px 16px;
   display: block;
   margin: 0 auto;
@@ -515,7 +514,7 @@ overflow: hidden */
   align-items: center;
 }
 .stock-title {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 20px;
   font-weight: 600;
   line-height: 25px;
@@ -523,7 +522,7 @@ overflow: hidden */
   margin-bottom: 10px;
 }
 .stock-disc {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -532,12 +531,12 @@ overflow: hidden */
   margin-bottom: 40px;
 }
 .stock-button {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   border-radius: 8px;
-  background: rgb(15, 106, 190);
+  background: var(--backround-button);
   padding: 10px 16px 12px 16px;
   display: block;
   margin: 0 auto;
@@ -547,12 +546,12 @@ overflow: hidden */
   z-index: 1;
 }
 .stock-button-icon {
-  color: rgb(255, 255, 255);
+  color: var(--title-buutton-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
   border-radius: 30px;
-  background: rgb(11, 139, 47);
+  background: var(--backround-desr-icon);
   padding: 5px 10px 5px 10px;
   position: absolute;
   top: -9px;
@@ -565,7 +564,7 @@ overflow: hidden */
 }
 
 .reviews-title {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 23px;
   font-weight: 600;
   line-height: 30px;
@@ -575,7 +574,7 @@ overflow: hidden */
 .reviews-card {
   padding: 20px;
   border-radius: 10px;
-  background: rgb(75, 75, 82);
+  background: var(--background-input);
 }
 .reviews-card-title-wraper {
   display: flex;
@@ -583,13 +582,13 @@ overflow: hidden */
   margin-bottom: 16px;
 }
 .reviews-card-title {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
 }
 .reviews-card-descr {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -601,7 +600,7 @@ overflow: hidden */
   margin-bottom: 16px;
 }
 .reviews-card-user-name {
-  color: rgb(241, 241, 241);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -610,7 +609,7 @@ overflow: hidden */
   margin-right: 8px;
 }
 .reviews-card-time {
-  color: rgb(122, 122, 126);
+  color: var(--title-deskr-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
@@ -626,7 +625,7 @@ overflow: hidden */
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: rgb(54, 54, 57);
+  background: var( --background-stik);
   display: flex;
   justify-content: center;
   align-items: center;

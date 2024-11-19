@@ -1,5 +1,8 @@
 import "./swiper";
 
+import burder_icon from '../img/burg-menu.svg';
+import burder_clouse_icon from '../img/burg-menu-clouse.svg';
+
 
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -12,18 +15,19 @@ import "./swiper";
         if (menu.classList.contains('open')) {
             menu.classList.remove('open');
             menu.style.display = 'none';
-            menuIcon.src = '/Fast-Work/src/img/burg-menu.svg';
+            menuIcon.src = burder_icon;
             overlay.style.display = 'none';
             document.body.style.overflow = '';
+
         } else {
             menu.style.display = 'flex';
-            setTimeout(() => menu.classList.add('open'), 10); // Немного подождем, чтобы анимация сработала
-            menuIcon.src = '/Fast-Work/src/img/burg-menu-clouse.svg';
+            setTimeout(() => menu.classList.add('open'), 10); 
+            menuIcon.src = burder_clouse_icon;
             overlay.style.display = 'block';
             document.body.style.overflow = 'hidden';
         }
         burger.classList.toggle('open');
-    };
+    }; 
 
     burger.addEventListener("click", toggleMenu);
 

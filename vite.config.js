@@ -1,18 +1,46 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { glob } from 'glob';
 
-export default defineConfig({
-  base: '/Fast-Work/',
-  server: {
-    host: '0.0.0.0',
-    port: 8080,
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'), // имя файла должно соответствовать основному файлу вашего проекта
-        page: resolve(__dirname, 'src/pages/main.html') // добавьте другие страницы, если они есть
-      }
-    }
-  }
+
+
+
+export default defineConfig(({ command }) => {
+  return {
+
+    base:"/Fast-Work/"
+  ,
+  
+    define: {
+      [command === 'serve' ? 'global' : '_global']: {},
+    },
+    root: 'src',
+    build: {
+      sourcemap: true,
+      rollupOptions: {
+        input: glob.sync('./src/*.html'),
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          },
+          entryFileNames: chunkInfo => {
+            if (chunkInfo.name === 'commonHelpers') {
+              return 'commonHelpers.js';
+            }
+            return '[name].js';
+          },
+          assetFileNames: assetInfo => {
+            if (assetInfo.name && assetInfo.name.endsWith('.html')) {
+              return '[name].[ext]';
+            }
+            return 'assets/[name]-[hash][extname]';
+          },
+        },
+      },
+      outDir: '../dist',
+      emptyOutDir: true,
+    },
+    plugins: [],
+  };
 });

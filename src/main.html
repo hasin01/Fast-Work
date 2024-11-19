@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -12,16 +12,16 @@
       <div class="conteiner">
         <nav class="nav">
           <a class="logo" href="/Fast-Work/">FastWork.</a>
-          
+
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a class="notification"  />
+              <a class="notification" />
             </li>
             <li class="nav-list-item">
               <a href="">
                 <img
                   class="userphoto"
-                  src="/src/img/userphoto.png"
+                  src="/img/userphoto.png"
                   alt="userphoto"
               /></a>
             </li>
@@ -29,30 +29,74 @@
               <button class="notification">
                 <img
                   class="notification"
-                  src="/src/img/notification_non_active.svg"
+                  src="/img/notification_non_active.svg"
                   alt="notification"
                 />
               </button>
             </li>
             <li class="nav-list-item">
               <button class="burger" id="burger">
-                <img class="burger" id="menu-icon" src="/src/img/burg-menu.svg" alt="" />
+                <img
+                  class="burger"
+                  id="menu-icon"
+                  src="img/burg-menu.svg"
+                  alt=""
+                />
               </button>
               <div class="menu-burder" id="menu-burder">
-                <button class="menu-burger-button">+ Створити замовлення</button>
-               <ul class="menu-burder-list">
-               <li class="menu-burder-item "> <a class="menu-burder-item-link burger-menu-home" href="#">Головна</a> </li>
-                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-catalog" href="#">Каталог</a></li>
-                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-user" href="#">Мій профіль</a></li>
-                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-ok" href="#">Виконані замовлення</a></li>
-                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-user" href="#">Створені замовлення</a></li>
-                <li class="menu-burder-item"><a class="menu-burder-item-link burger-requests-icon" href="#">Мої заявки</a></li>
-               <li class="menu-burder-item"><a class="menu-burder-item-link burger-user-round-check" href="#">Підписка</a></li>
-                <li class="menu-burder-item"><a class="menu-burder-item-link burger-log-out-icon" href="#">Вийти</a></li>
-                
-               </ul>
-
-
+                <button class="menu-burger-button">
+                  + Створити замовлення
+                </button>
+                <ul class="menu-burder-list">
+                  <li class="menu-burder-item">
+                    <a class="menu-burder-item-link burger-menu-home" href="#"
+                      >Головна</a
+                    >
+                  </li>
+                  <li class="menu-burder-item">
+                    <a
+                      class="menu-burder-item-link burger-menu-catalog"
+                      href="#"
+                      >Каталог</a
+                    >
+                  </li>
+                  <li class="menu-burder-item">
+                    <a class="menu-burder-item-link burger-menu-user" href="#"
+                      >Мій профіль</a
+                    >
+                  </li>
+                  <li class="menu-burder-item">
+                    <a class="menu-burder-item-link burger-menu-ok" href="#"
+                      >Виконані замовлення</a
+                    >
+                  </li>
+                  <li class="menu-burder-item">
+                    <a class="menu-burder-item-link burger-menu-user" href="#"
+                      >Створені замовлення</a
+                    >
+                  </li>
+                  <li class="menu-burder-item">
+                    <a
+                      class="menu-burder-item-link burger-requests-icon"
+                      href="#"
+                      >Мої заявки</a
+                    >
+                  </li>
+                  <li class="menu-burder-item">
+                    <a
+                      class="menu-burder-item-link burger-user-round-check"
+                      href="#"
+                      >Підписка</a
+                    >
+                  </li>
+                  <li class="menu-burder-item">
+                    <a
+                      class="menu-burder-item-link burger-log-out-icon"
+                      href="#"
+                      >Вийти</a
+                    >
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -60,15 +104,19 @@
       </div>
     </header>
     <main>
-    <div class="overlay" id="overlay"></div>
+      <div class="overlay" id="overlay"></div>
 
       <div class="conteiner">
         <div class="navigation-item">
           <ul class="navigation-list">
-            <li><img src="/src/img/home.svg" alt="home" /></li>
-            <li><a class="navigation-list-item" href="/Fast-Work/">Головна</a></li>
-            <li><img src="/src/img/arrowcatalog.svg" alt="catalog" /></li>
-            <li><a class="navigation-list-item" href="/Fast-Work/src/pages/main.html">Каталог</a></li>
+            <li><img src="/img/home.svg" alt="home" /></li>
+            <li>
+              <a class="navigation-list-item" href="/Fast-Work/">Головна</a>
+            </li>
+            <li><img src="/img/arrowcatalog.svg" alt="catalog" /></li>
+            <li>
+              <a class="navigation-list-item" href="/Fast-Work/main.html">Каталог</a>
+            </li>
           </ul>
         </div>
         <h1 class="title-work">Робота поруч – вакансії по всій Україні!</h1>
@@ -161,7 +209,7 @@
                     </li>
                   </ul>
                   <button class="work-card-element-favorite">
-                    <img src="/src/img/favorite_no_active.svg" alt="" />
+                    <img src="/img/favorite_no_active.svg" alt="" />
                   </button>
                 </li>
               </ul>
@@ -201,7 +249,7 @@
                     </li>
                   </ul>
                   <button class="work-card-element-favorite">
-                    <img src="/src/img/favorite_no_active.svg" alt="" />
+                    <img src="/img/favorite_no_active.svg" alt="" />
                   </button>
                 </li>
               </ul>
@@ -241,19 +289,18 @@
                     </li>
                   </ul>
                   <button class="work-card-element-favorite">
-                    <img src="/src/img/favorite_no_active.svg" d />
+                    <img src="/img/favorite_no_active.svg" d />
                   </button>
                 </li>
               </ul>
             </li>
           </ul>
-          <button class="return-back">Показати ще</button>
+          <button class="return-back hover-button">Показати ще</button>
           <div class="stik">
-            <a><img src="/src/img/arrow-stick.svg" /></a>
+            <a><img src="/img/arrow-stick.svg" /></a>
           </div>
         </div>
       </section>
-
     </main>
     <footer class="footer">
       <div class="conteiner">
@@ -267,36 +314,46 @@
         </section>
         <section class="footer-nav">
           <ul class="footer-navigation-list">
-            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Контакти</a></li>
-            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Про нас</a></li>
-            <li class="footer-navigation-item"><a class="footer-navigation-item-link" href="">Каталог</a></li>
-            <li class="footer-navigation-item"><a  class="footer-navigation-item-link" href="">Головна</a></li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Контакти</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Про нас</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Каталог</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Головна</a>
+            </li>
           </ul>
         </section>
         <section class="footer-nav-dok">
-          <a  class="footer-nav-dok-link" href="">Умови використання</a>
+          <a class="footer-nav-dok-link" href="">Умови використання</a>
           <a class="footer-nav-dok-link" href="">Документи</a>
         </section>
-        <a class="footer-email-link" href="mailto:emailsupport@gmail.com">emailsupport@gmail.com</a>
+        <a class="footer-email-link" href="mailto:emailsupport@gmail.com"
+          >emailsupport@gmail.com</a
+        >
         <section class="footer-pay">
           <ul class="footer-pay-list">
             <li class="footer-pay-list-item">
-              <img src="/src/img/prostir_logo.svg" alt="" />
+              <img src="/img/prostir_logo.svg" alt="" />
             </li>
             <li class="footer-pay-list-item">
-              <img src="/src/img/easypay.svg" alt="" />
+              <img src="/img/easypay.svg" alt="" />
             </li>
             <li class="footer-pay-list-item">
-              <img src="/src/img/MasterCard.svg.svg" alt="" />
+              <img src="/img/MasterCard.svg.svg" alt="" />
             </li>
             <li class="footer-pay-list-item">
-              <img src="/src/img/Visa.svg" alt="" />
+              <img src="/img/Visa.svg" alt="" />
             </li>
           </ul>
         </section>
         <a class="footer-link" href="">© Copyright</a>
       </div>
     </footer>
-    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
