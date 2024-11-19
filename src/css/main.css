@@ -8,7 +8,7 @@
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: var( --background-stik);
+  background: var(--background-stik);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
 }
 .button-main {
   border-radius: 8px;
-  background: var( --backround-button-icon);
+  background: var(--backround-button-icon);
   color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 600;
@@ -73,6 +73,9 @@
   text-align: center;
   width: 112px;
 }
+.main-absolut {
+  position: relative;
+}
 .main-icon {
   color: var(--title-buutton-color);
   font-size: 14px;
@@ -96,8 +99,7 @@
   height: 16px;
 }
 
-.main-icon-title{
-
+.main-icon-title {
   color: var(--title-buutton-color);
   font-size: 14px;
   font-weight: 400;
@@ -109,18 +111,16 @@
   align-items: center;
   position: absolute;
   top: 295px;
-  right: 2px;
+  right: -20px;
   transform: rotate(10deg);
   z-index: 1;
-
 }
 
-.main-icon-title::before{
+.main-icon-title::before {
   content: url("/img/clock-card.svg");
   margin-right: 5px;
   width: 16px;
   height: 16px;
-  
 }
 .vacansy {
   margin-top: 60px;
@@ -143,7 +143,7 @@
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: var( --background-stik);
+  background: var(--background-stik);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +212,7 @@ overflow: hidden */
 }
 .work-card-timeend-swiper {
   border-radius: 30px;
-  background: var( --backround-button-icon);
+  background: var(--backround-button-icon);
   padding: 4px 20px 4px 20px;
   color: var(--title-buutton-color);
   font-size: 14px;
@@ -387,7 +387,7 @@ overflow: hidden */
   border-radius: 100px;
   min-width: 44px;
   height: 44px;
-  background: var( --backround-button-icon);
+  background: var(--backround-button-icon);
   color: var(--title-buutton-color);
   font-family: Geologica;
   font-size: 20px;
@@ -398,6 +398,17 @@ overflow: hidden */
   align-items: center;
   margin-right: 12px;
 }
+
+
+.publish-your-ad-button-wraper {
+display: flex;
+justify-content: center;
+}
+.publish-your-ad-button-wraper-absolut{
+  display: inline-block;
+  position: relative;
+
+}
 .publish-your-ad-button {
   color: var(--title-buutton-color);
   font-size: 14px;
@@ -406,12 +417,7 @@ overflow: hidden */
   border-radius: 8px;
   background: var(--backround-button);
   padding: 10px 16px 12px 16px;
-  display: block;
-  margin: 0 auto;
   margin-top: 26px;
-}
-.publish-your-ad-button-wraper {
-  position: relative;
 }
 
 .publish-your-ad-button-icon {
@@ -423,9 +429,9 @@ overflow: hidden */
   line-height: 15px;
   padding: 5px 10px 5px 10px;
   position: absolute;
-  top: -4px;
-  right: 23px;
-  transform: rotate(35deg);
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(35deg);
 }
 
 .cost-vacancy {
@@ -450,7 +456,7 @@ overflow: hidden */
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  border: 1px solid var( --background-stik);
+  border: 1px solid var(--background-stik);
   border-radius: 10px;
   background: var(--backround-work);
   padding: 17px;
@@ -625,7 +631,7 @@ overflow: hidden */
   width: 50px;
   height: 50px;
   border-radius: 100px;
-  background: var( --background-stik);
+  background: var(--background-stik);
   display: flex;
   justify-content: center;
   align-items: center;
