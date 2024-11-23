@@ -1,0 +1,166 @@
+.profile-user-photo-big {
+  max-width: 100%;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.profile-user-name {
+  color: rgb(241, 241, 241);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-right: 10px;
+}
+
+.profile-star {
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  display: flex;
+}
+.profile-star::after {
+  content: url("/img/star.svg");
+  margin-left: 4px;
+}
+.wraper-star {
+  display: flex;
+  align-items: center;
+}
+
+.profile-star-number {
+  border-bottom: 1px solid rgb(122, 122, 126);
+  color: rgb(122, 122, 126);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-left: 5px;
+}
+
+.profile-name-wraper {
+  display: flex;
+  align-items: center;
+}
+.profile-user-location {
+  color: rgb(122, 122, 126);
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.25;
+  padding-top: 10px;
+  padding-bottom: 29px;
+}
+.profile-user-action {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-button-action {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.profile-button-action-share::before {
+  content: url("/img/share.svg");
+  margin-right: 8px;
+}
+
+.profile-button-action-bloced::before {
+  content: url("/img/blocker.svg");
+  margin-right: 8px;
+}
+.profile-button-action {
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+}
+.profile-user-desc-title {
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 16px;
+}
+.profile-user-desc {
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  padding-bottom: 16px;
+}
+.profile-orders-list {
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.profile-orders-item {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.25;
+  border-radius: 30px;
+  padding: 6px 11px 7px 11px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.contact {
+  display: flex;
+  border: 1px solid rgb(54, 54, 57);
+  border-radius: 8px;
+  background: rgb(45, 45, 50);
+  padding: 16px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.contact-title {
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 22px;
+}
+
+.contact-telephone {
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.contact-list {
+  display: flex;
+  gap: 16px;
+}
+.reviews {
+}
+.revies-title-list {
+  display: flex;
+  gap: 12px;
+}
+.revies-title-item {
+  color: rgb(241, 241, 241);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  width: 100%;
+}
+
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.revies-title-item {
+}
+
+.profile-reviews-card-list {
+}
+.profile-reviews-card-item {
+}
+.work-card-element-requirements-payment {
+}
+.work-icon {
+}
+.profile-reviews-star-list {
+}
+.swiper3 {
+}

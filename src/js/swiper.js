@@ -43,5 +43,20 @@ document.addEventListener("DOMContentLoaded", () => {
       prevButton2.addEventListener("click", () => swiper2.slidePrev());
       nextButton2.addEventListener("click", () => swiper2.slideNext());
     }
+
+    const swiper3Container = document.querySelector(".swiper3");
+  
+    if (swiper3Container) {
+      const swiper3 = new Swiper(".swiper3", {
+        modules: [Navigation],
+        spaceBetween: 0,
+        initialSlide: 0,
+      });
+  
+
+    }
   });
+
+
+  
   
