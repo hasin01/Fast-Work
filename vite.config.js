@@ -6,6 +6,8 @@ import { glob } from 'glob';
 
 export default defineConfig(({ command }) => {
   return {
+    server: { host: true, 
+       port: 8080,  },
 
     base:"/Fast-Work/"
   ,

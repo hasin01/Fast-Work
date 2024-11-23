@@ -142,25 +142,126 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1.25;
-  width: 100%;
 }
 
-.swiper-wrapper {
+.revies-title-item-1 {
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  border-bottom: 3px solid rgb(197, 136, 17);
 }
-.swiper-slide {
+.revies-title-item-2 {
+  color: rgb(122, 122, 126);
+  font-family: Geologica;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
 }
+.slider-reviews {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.slider-reviews::-webkit-scrollbar {
+  display: none;
+}
+
 .revies-title-item {
+  display: inline-block;
+  margin-right: 8px;
 }
 
 .profile-reviews-card-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .profile-reviews-card-item {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(75, 75, 82);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.work-card-element-requirements-payment {
+.profile-reviews-card-item-title {
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 600;
 }
+
 .work-icon {
+  margin: 20px 0;
 }
 .profile-reviews-star-list {
+  display: flex;
+  gap: 4px;
 }
-.swiper3 {
+.profile-reviews-star-item-img {
+  width: 24px;
+  height: 24px;
+fill: #C588;
+}
+
+.profile-reviews-card-item-desc {
+  color: rgb(241, 241, 241);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  margin-top: 8px;
+}
+
+.profile-reviews-card-user-wraper {
+  display: flex;
+  margin-top: 16px;
+}
+
+.profile-reviews-card-user-name {
+  color: rgb(241, 241, 241);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 5px;
+}
+
+.profile-reviews-card-user-photo {
+  margin-right: 8px;
+}
+.profile-reviews-card-user-desc {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+}
+.profile-reviews-card-user-desc-number-star {
+  color: rgb(241, 241, 241);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+}
+.profile-reviews-card-user-desc-number-star-img {
+  width: 21px;
+}
+.profile-reviews-card-user-quantity {
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+}
+.profile-reviews-card-user-time {
+  color: rgb(122, 122, 126);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+}
+.profile-reviews-card-user-desc-wraper {
+  display: flex;
+}
+
+.profile-reviews-card-user-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
 }
