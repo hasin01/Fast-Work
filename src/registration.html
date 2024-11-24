@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/inet.svg" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastWork</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <nav class="nav">
+          <a class="logo" href="/Fast-Work/">FastWork.</a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="notification" />
+            </li>
+            <li class="nav-list-item">
+              <a href="profile.html">
+                <img
+                  class="userphoto"
+                  src="/img/userphoto.png"
+                  alt="userphoto"
+              /></a>
+            </li>
+            <li class="nav-list-item">
+              <button class="notification">
+                <img
+                  class="notification"
+                  src="img/notification_non_active.svg"
+                  alt="notification"
+                />
+              </button>
+            </li>
+            <li class="nav-list-item">
+              <button class="burger" id="burger">
+                <img class="burger" id="menu-icon" src="img/burg-menu.svg" alt="" />
+              </button>
+              <div class="menu-burder" id="menu-burder">
+                <button class="menu-burger-button hover-button">+ Створити замовлення</button>
+               <ul class="menu-burder-list">
+               <li class="menu-burder-item "> <a class="menu-burder-item-link burger-menu-home" href="#">Головна</a> </li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-catalog" href="#">Каталог</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-user" href="profile.html">Мій профіль</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-ok" href="#">Виконані замовлення</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-menu-user" href="#">Створені замовлення</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-requests-icon" href="#">Мої заявки</a></li>
+               <li class="menu-burder-item"><a class="menu-burder-item-link burger-user-round-check" href="#">Підписка</a></li>
+                <li class="menu-burder-item"><a class="menu-burder-item-link burger-log-out-icon" href="#">Вийти</a></li>
+                
+               </ul>
+
+
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="overlay" id="overlay"></div>
+
+  
+    
+<main>
+   <div class="conteiner"> 
+     
+    <div class="navigation-item">
+        <ul class="navigation-list">
+          <li class="navigation-item-menu">
+            <img src="img/arrow-right-main.svg" alt="catalog" />
+            <a
+              class="navigation-item-menu-title"
+              href="main.html"
+            >
+              Повернутись назад</a
+            >
+          </li>
+          <li class="navigation-item-menu nav-pading">
+            <img src="img/nav-icon.svg" alt="" height="17px" />
+          </li>
+          <li class="navigation-item-menu">
+            <img
+              class="navigation-list-item-img"
+              src="img/home.svg"
+              alt="home"
+            />
+            <a class="navigation-list-item" href="/Fast-Work/">Головна</a>
+          </li>
+     
+        </ul>
+   </div>
+    <section class="password-section">
+        <div class=" password-section-wraper">
+<h1 class="registration-title">Реєстрація</h1>
+<div class="step-list">
+    <div class="step-item step-item-active">Крок 1</div>
+    <div class="step-item">Крок 2</div>
+</div>
+<p class="registration-desc">Додавання Email та пароля</p>
+<div class="registration-wraper-js"><button class="registration-button-google">Реєстрація за допомогою <img src="/img/google-icon.svg" alt=""></button>
+    <form  class="registration-form-work" action="">
+        <input
+          class="registration-form-work-item "
+          type="text"
+          id="login"
+          name="login"
+          placeholder="Логін"
+        />
+        <input
+          class="registration-form-work-item "
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Пароль"
+        />
+        <input
+          class="registration-form-work-item "
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          placeholder="Повторіть пароль"
+        />
+          <a class="forgot-password" href="#">Забули пароль?</a>
+        <input class=" hover-button work-button" type="submit" value="Далі" />
+      </form>
+      </div>
+  
+        </div>
+    </section>
+</div>
+
+</main>
+    <footer class="footer">
+      <div class="conteiner">
+        <section class="lang">
+          <div class="lang-v lang-language">
+            Мова сайту: <span class="lang-v-select">UA</span>
+          </div>
+          <div class="lang-v lang-currency">
+            Валюта на сайті: <span class="lang-v-select">UAH</span>
+          </div>
+        </section>
+        <section class="footer-nav">
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Контакти</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Про нас</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Каталог</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-item-link" href="">Головна</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-nav-dok">
+          <a class="footer-nav-dok-link" href="">Умови використання</a>
+          <a class="footer-nav-dok-link" href="">Документи</a>
+        </section>
+        <a class="footer-email-link" href="mailto:emailsupport@gmail.com"
+          >emailsupport@gmail.com</a
+        >
+        <section class="footer-pay">
+          <ul class="footer-pay-list">
+            <li class="footer-pay-list-item">
+              <img src="img/prostir_logo.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="img/easypay.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="img/MasterCard.svg.svg" alt="" />
+            </li>
+            <li class="footer-pay-list-item">
+              <img src="img/Visa.svg" alt="" />
+            </li>
+          </ul>
+        </section>
+        <a class="footer-link" href="">© Copyright</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
