@@ -52,12 +52,7 @@ body {
   );
 }
 
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-}
 
 .logo {
   color: var(--title-color);
@@ -67,6 +62,14 @@ body {
 }
 .nav-list-item:not(:first-child):not(:last-child) {
   margin-right: 24px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+
 }
 .nav {
   display: flex;
@@ -91,6 +94,17 @@ gap: 4px;
   padding-right: 5px;
   padding-left: 5px;
   
+}
+
+.header-register-button{
+color: rgb(255, 255, 255);
+font-size: 14px;
+font-weight: 600;
+line-height: 1.25;
+border-radius: 8px;
+padding: 10px 16px 12px 16px;
+background: rgb(15, 106, 190);
+display: none;
 }
 
 

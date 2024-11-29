@@ -1,0 +1,153 @@
+
+
+.registration-wraper-js{
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-wraper{
+    display: flex;
+    flex-direction: column;
+}
+.password-section-wraper{
+    display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 24px;
+}
+
+.registration-title {
+color: rgb(241, 241, 241);
+font-size: 24px;
+font-weight: 600;
+line-height: 1.25;
+text-align: center;
+}
+.step-list {
+display: flex;
+justify-content: center;
+gap: 20px;
+align-items: baseline
+}
+.step-item {
+color: rgb(122, 122, 126);
+font-size: 16px;
+font-weight: 600;
+line-height: 1.25;
+
+}
+.step-item-active {
+    padding-bottom: 4px;
+    border-bottom: 3px solid rgb(197, 136, 17);
+    color: rgb(241, 241, 241);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+
+}
+.registration-desc {
+color: rgb(122, 122, 126);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.28;
+text-align: center;
+}
+.registration-button-google {
+color: rgb(241, 241, 241);
+font-size: 16px;
+font-weight: 400;           
+line-height: 1.25;
+border-radius: 8px;
+background: rgb(54, 54, 57);
+padding:12.5px 24px;
+display: flex;
+justify-content: center;
+gap: 12px;
+margin-bottom: 24px;
+}
+.registration-form-work{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.registration-form-work-item {
+    margin-bottom: 10px;
+    border-radius: 9px;
+    background: var(--background-input);
+    padding:  12.5px 24px ;
+    outline: 0;
+    border: 0;
+    color: wheat;
+
+}
+
+
+.forgot-password {
+color: rgb(241, 241, 241);
+font-size: 16px;
+font-weight: 600;
+line-height: 1.25;
+text-align: end;
+margin-bottom: 24px;
+}
+.password-submit-btn {
+    color: var(--title-buutton-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 8px;
+    background: var(--backround-button);
+    padding: 10px 16px 12px 16px;
+}
+.button-login{
+color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 400;
+line-height: 1.28;
+border-radius: 12px;
+background: rgb(15, 106, 190);
+padding: 14px 24px 16px 24px;
+border:rgb(15, 106, 190) ;
+}
+
+.button-login-registration{
+color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 400;
+line-height: 1.28;
+box-sizing: border-box;
+border: 2px solid rgb(15, 106, 190);
+border-radius: 12px;
+padding: 14px 24px 16px 24px;
+margin-top: 12px;
+
+
+}
+
+.button-login-registration:hover{
+
+
+
+background: rgb(9, 72, 166);
+}
+
+.login-title{
+    color: rgb(241, 241, 241);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+margin-top: 80px;
+
+}
+
+.notification-login{
+color: rgb(197, 136, 17);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.25;
+margin-bottom: 16px;
+display: none;
+
+}
