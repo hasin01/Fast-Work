@@ -76,7 +76,6 @@ function handleProfileSubmit(e) {
     console.log("Пользователь не авторизован");
   }
 
-  window.location.href = "/Fast-Work/";
 }
 formElement.addEventListener("submit", handleFormSubmit);
 

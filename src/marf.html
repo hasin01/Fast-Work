@@ -1,0 +1,148 @@
+<div class="wraper-update-profile conteiner">
+    <div class="update-profile-exit-list">
+      <button class="update-profile-back">
+        <img src="./img/arrow-right-main.svg" alt="" /><span
+          class="update-profile-exit-back-title"
+          >Назад</span
+        >
+      </button>
+      <button class="update-profile-exit">
+        <img src="./img/burg-menu-clouse.svg" alt="" />
+      </button>
+    </div>
+
+    <h2 class="update-profile-title">Редагування акаунту</h2>
+    <form action="" class="update-profile-form">
+      <div class="update-profile-user-avatar-wraper">
+        <img
+          class="update-profile-user-avatar"
+          src="./img/profile-img.png"
+          alt=""
+        />
+        <div class="file-upload-wrapper">
+          <button class="file-upload-btn">Змінити фото</button>
+          <input
+            id="profileImg"
+            class="update-profile-user-avatar-js"
+            type="file"
+            alt="Змінити фото"
+          />
+        </div>
+      </div>
+      <div class="update-profile-input-name-list">
+        <label class="update-profile-label-name" for="name">Імʼя</label>
+        <input
+          class="update-profile-input-name"
+          type="text"
+          id="name"
+          placeholder="Імʼя"
+        />
+      </div>
+      <div class="update-profile-input-surname-list">
+        <label class="update-profile-label-surname" for="surname"
+          >Прізвище</label
+        >
+        <input
+          class="update-profile-input-surname"
+          type="text"
+          id="surname"
+          placeholder="Прізвище"
+        />
+      </div>
+      <div class="update-profile-location-list">
+        <div class="update-profile-location-list-wraper">
+          <input
+            class="update-profile-location-country update-profile-location-country__placeholder"
+            type="text"
+            id="country"
+            placeholder="Країна"
+          />
+          <input
+            class="update-profile-location-city update-profile-location-city__placeholder"
+            type="text"
+            id="city"
+            placeholder="Місто"
+          />
+        </div>
+        <input
+          class="update-profile-location-street update-profile-location-street__placeholder"
+          type="text"
+          id="street"
+          placeholder="Вулиця"
+        />
+      </div>
+      <p class="update-profile-location-desk">
+        Ваша адреса буде прихована від інших користувачів. Вона потрібна лише
+        для показу заявок поруч із вами
+      </p>
+      <button class="update-profile-delete-profile">
+        <img src="./img/delete-icon.svg" alt="" />
+        <span class="update-profile-delete-text">Видалити акаунт</span>
+      </button>
+      <p class="update-profile-titile-desk">Про мене:</p>
+      <textarea
+        class="update-profile-desk-area"
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Про мене"
+      ></textarea>
+      <p class="update-profile-titile-contact">Контакти</p>
+      <div class="update-profile-label-tel-list">
+        <label class="update-profile-label-tel" for="tel"
+          >Номер телефону</label
+        >
+        <input
+          class="update-profile-input-tel"
+          type="tel"
+          id="tel"
+          placeholder="Номер телефону"
+        />
+      </div>
+      <div class="update-profile-input-massage-list">
+        <div class="update-profile-input-viber-list">
+          <input type="checkbox" id="checkbox1" class="custom-checkbox" />
+          <label for="checkbox1" class="checkbox-sort">
+            <img src="./img/viber.png" alt=""
+          /></label>
+        </div>
+
+        <div class="update-profile-input-viber-list checkbox-container">
+          <input type="checkbox" id="checkbox2" class="custom-checkbox" />
+          <label for="checkbox2" class="checkbox-sort">
+            <img src="./img/whatsApp.png" alt=""
+          /></label>
+        </div>
+      </div>
+
+      <div class="update-profile-label-tel-list">
+        <label class="update-profile-label-two-tel" for="second-tel"
+          >Додатковий номер</label
+        >
+        <input
+          class="update-profile-input-two-tel"
+          type="text"
+          id="secondTel"
+          placeholder="Номер"
+        />
+      </div>
+      <div class="update-profile-label-telegram-list">
+        <label class="update-profile-label-telegram" for="telegram"
+          ><img src="./img/telegram.png" alt="" />Telegram</label
+        >
+        <input
+          class="update-profile-input-telegram"
+          type="text"
+          id="telegram"
+          placeholder="@username"
+        />
+      </div>
+      <div class="update-profile-submit-wraper">
+        <input
+          class="update-profile-submit"
+          type="submit"
+          value=" Зберегти зміни"
+        />
+      </div>
+    </form>
+  </div>

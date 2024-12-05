@@ -1,7 +1,6 @@
 import { auth } from './firebase';
-import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { doc, getFirestore, setDoc } from 'firebase/firestore/lite';
-
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { doc, getFirestore, setDoc,getDoc } from 'firebase/firestore/lite';
 const db = getFirestore();
 
 export const registerUser = (email, password) => {
@@ -19,6 +18,8 @@ export const registerUser = (email, password) => {
 
 export const registrationUpdateUserProfile = async (user, displayName, surname) => {
   try {
+    console.log(user)
+    console.log("first")
     await updateProfile(user, {
       displayName: displayName
     });
@@ -26,8 +27,10 @@ export const registrationUpdateUserProfile = async (user, displayName, surname) 
     await setDoc(doc(db, "users", user.uid), {
       displayName: displayName,
       surname: surname,
-    });
 
+
+    });
+    window.location.href = "/Fast-Work/";
     console.log('Профиль успешно обновлен');
   } catch (error) {
     console.error('Ошибка обновления профиля:', error);
@@ -71,6 +74,67 @@ export const loginUser = (email, password) => {
 
 
 };
+
+
+
+
+
+
+
+
+
+
+export const UpdateUserProfile = async (user, profileData) => {
+  try {
+    console.log(user);
+    console.log("Updating profile...");
+    
+
+    // Update the user profile in Firestore
+    await setDoc(doc(db, "users", user.uid), {
+      displayName: profileData.displayName,
+      surname: profileData.surname,
+      country: profileData.country,
+      city: profileData.city,
+      street: profileData.street,
+      message: profileData.message,
+      tel: profileData.tel,
+      secondTel: profileData.secondTel,
+      telegram: profileData.telegram,
+      checkboxes: profileData.checkboxes,
+    });
+
+    await updateProfile(user, {
+      displayName: profileData.displayName,
+    });
+
+    console.log('Profile successfully updated');
+  } catch (error) {
+    console.error('Error updating profile:', error);
+    throw error;
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -9,7 +9,6 @@ import { getAuth, signOut } from "firebase/auth";
 
 
 
-
   document.addEventListener("DOMContentLoaded", () => {
     const burger = document.getElementById("burger");
     const menu = document.getElementById("menu-burder");
@@ -53,35 +52,34 @@ import { getAuth, signOut } from "firebase/auth";
 
 
 
-// import { getFirestore, doc, getDoc } from "firebase/firestore"; // Убедитесь, что у вас есть эти импорты
 
-// export const getUserProfile = async (userId) => {
-//   const db = getFirestore();
 
-//   try {
-//     const docRef = doc(db, "users", userId);
-//     const docSnap = await getDoc(docRef);
 
-//     if (docSnap.exists()) {
-//       const userData = docSnap.data();
-//       console.log("Имя:", userData.displayName);
-//       console.log("Фамилия:", userData.surname);
-//       return userData;
-//     } else {
-//       console.log("Документ не найден");
-//       return null;
-//     }
-//   } catch (error) {
-//     console.error("Ошибка получения данных:", error);
-//     return null;
-//   }
-// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 const auth = getAuth();
+
 
 
 
@@ -93,7 +91,6 @@ document.querySelector(".nav-list").style.display = "flex";
     const signOutbutn = document.querySelector(".sign-out");
 
 signOutbutn.addEventListener("click", () => {
-    const auth = getAuth();
     signOut(auth).then(() => {
     window.location.href = "/Fast-Work/";
 
