@@ -107,8 +107,9 @@ export const UpdateUserProfile = async (user, profileData) => {
     await updateProfile(user, {
       displayName: profileData.displayName,
     });
-
+    document.location.reload()
     console.log('Profile successfully updated');
+    
   } catch (error) {
     console.error('Error updating profile:', error);
     throw error;

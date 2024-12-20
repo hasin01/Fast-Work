@@ -1,57 +1,44 @@
 import { UpdateUserProfile } from "./auth";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { doc, getFirestore, getDoc } from "firebase/firestore/lite";
-import photoBIg from "/img/User-photo-big.png"
-import paint  from "/img/paint.svg"
-import love from "/img/love.svg"
-import people from "/img/people.svg"
-import telegram from "/img/telegram.png"
-import viber from "/img/viber.png"
-import whatsApp from "/img/whatsApp.png"
-
-
-
-
+import photoBIg from "/img/User-photo-big.png";
+import paint from "/img/paint.svg";
+import love from "/img/love.svg";
+import people from "/img/people.svg";
+import telegram from "/img/telegram.png";
+import viber from "/img/viber.png";
+import whatsApp from "/img/whatsApp.png";
+import arrowRightMain from "/img/arrow-right-main.svg"
 const profileUpdateForm = document.querySelector(".update-profile-form");
 
-
-
-
-
-
-
-
-
-  const getUserId = async () => {
-    return new Promise((resolve, reject) => {
-      const unsubscribe = onAuthStateChanged(auth, (user) => {
-        unsubscribe();
-        if (user) {
-          resolve(user.uid);
-        } else {
-          reject("No user is signed in");
-        }
-      });
+const getUserId = async () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      unsubscribe();
+      if (user) {
+        resolve(user.uid);
+      } else {
+        reject("No user is signed in");
+      }
     });
-  };
-  
-  const db = getFirestore();
-  const auth = getAuth();
-  
+  });
+};
 
+const db = getFirestore();
+const auth = getAuth();
 
-  const fetchData = async () => {
-    try {
-      const userId = await getUserId();
-      const docRef = doc(db, "users", userId);
-      const docSnap = await getDoc(docRef);
-      
-      if (docSnap.exists()) {
-        const userData = docSnap.data();
-        console.log(userData);
-        const wrapperProfileCard = document.querySelector(".profile-card-js");
-        if (wrapperProfileCard) {
-          wrapperProfileCard.innerHTML = `
+const fetchData = async () => {
+  try {
+    const userId = await getUserId();
+    const docRef = doc(db, "users", userId);
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      const userData = docSnap.data();
+      console.log(userData);
+      const wrapperProfileCard = document.querySelector(".profile-card-js");
+      if (wrapperProfileCard) {
+        wrapperProfileCard.innerHTML = `
          
           
                 <img class="profile-user-photo-big" src="${photoBIg}" alt="" width="100%" />
@@ -61,29 +48,42 @@ const profileUpdateForm = document.querySelector(".update-profile-form");
                   <li><button class="edit-button"><img src=" ${people}" alt=""> Підписка</button></li>
                 </ul>
                 <div class="profile-name-wrapper">
-                  <h1 class="profile-user-name">${userData.displayName} ${userData.surname}</h1>
+                  <h1 class="profile-user-name">${userData.displayName} ${
+          userData.surname
+        }</h1>
                   <div class="wrapper-star">
                     <span class="profile-star">5.0</span>
                     <span class="profile-star-number">(12)</span>
                   </div>
                 </div>
-                <h3 class="profile-user-location">${userData.country}.${userData.city}</h3>
+                <h3 class="profile-user-location">${userData.country}.${
+          userData.city
+        }</h3>
                 <ul class="profile-user-action">
                   <button class="profile-button-action profile-button-action-share">Поділитись</button>
                   <button class="profile-button-action profile-button-action-blocked">Заблокувати</button>
                 </ul>
                 <h2 class="profile-user-desc-title">Про мене:</h2>
                 <p class="profile-user-desc">
-                  ${userData.message || 'Привіт! Я Богдан, професійний будівельник з понад 10-річним досвідом у цій сфері...'}
+                  ${
+                    userData.message ||
+                    "Привіт! Я Богдан, професійний будівельник з понад 10-річним досвідом у цій сфері..."
+                  }
                 </p>
                 <ul class="profile-orders-list">
-                  <li class="profile-orders-item">Завершених замовлень: <span>${userData.completedOrders || 0}</span></li>
-                  <li class="profile-orders-item">Створених замовлень: <span>${userData.createdOrders || 0}</span></li>
+                  <li class="profile-orders-item">Завершених замовлень: <span>${
+                    userData.completedOrders || 0
+                  }</span></li>
+                  <li class="profile-orders-item">Створених замовлень: <span>${
+                    userData.createdOrders || 0
+                  }</span></li>
                 </ul>
                 <div class="contact">
                   <div>
                     <h2 class="contact-title">Контакти</h2>
-                    <a class="contact-telephone" href="tel:${userData.tel}">${userData.tel}</a>
+                    <a class="contact-telephone" href="tel:${userData.tel}">${
+          userData.tel
+        }</a>
                   </div>
                   <ul class="contact-list">
                     <li class="contact-list-item"><img src=" ${telegram}" alt=""  /></li>
@@ -92,51 +92,39 @@ const profileUpdateForm = document.querySelector(".update-profile-form");
                   </ul>
                 </div>
           
-          `;  
+          `;
 
-          
-          const editButton = document.querySelector(".changes-button-js");
-          console.log(editButton);
-          editButton.addEventListener("click", () => {
-            // wrapperUpdateProfile.style.display = "block";
-            modalFetch()
-
-          });
-
-          
-        }
-      } else {
-        console.log("No such document!");
+        const editButton = document.querySelector(".changes-button-js");
+        console.log(editButton);
+        editButton.addEventListener("click", () => {
+          // wrapperUpdateProfile.style.display = "block";
+          modalFetch();
+        });
       }
-    } catch (error) {
-      console.error(error);
+    } else {
+      console.log("No such document!");
     }
-  };
-  
-  fetchData();
+  } catch (error) {
+    console.error(error);
+  }
+};
 
+fetchData();
 
+const modalFetch = async () => {
+  try {
+    const userId = await getUserId();
+    const docRef = doc(db, "users", userId);
+    const docSnap = await getDoc(docRef);
 
-
-
-
-
-  const modalFetch = async () => {
-    try {
-      const userId = await getUserId();
-      const docRef = doc(db, "users", userId);
-      const docSnap = await getDoc(docRef);
-      
-    
-        const userData = docSnap.data();
-        console.log(userData);
-        const wrapperProfileCard = document.querySelector(".wraper-update-profil");
-        if (wrapperProfileCard) {
-          wrapperProfileCard.innerHTML = 
-  `    <div class="wraper-update-profile conteiner">
+    const userData = docSnap.data();
+    console.log(userData);
+    const wrapperProfileCard = document.querySelector(".wraper-update-profil");
+    if (wrapperProfileCard) {
+      wrapperProfileCard.innerHTML = `    <div class="wraper-update-profile conteiner">
   <div class="update-profile-exit-list">
     <button class="update-profile-back">
-      <img src="./img/arrow-right-main.svg" alt="" /><span
+      <img src="${arrowRightMain}" alt="" /><span
         class="update-profile-exit-back-title"
         >Назад</span
       >
@@ -228,7 +216,7 @@ const profileUpdateForm = document.querySelector(".update-profile-form");
       name="message"
       rows="4"
       placeholder="Про мене"
-     placeholder="Про мене">${userData.message || ''}
+     placeholder="Про мене">${userData.message || ""}
 
 
     </textarea>
@@ -298,69 +286,58 @@ const profileUpdateForm = document.querySelector(".update-profile-form");
       />
     </div>
   </form>
-</div>`;  
+</div>`;
 
-          
+      const editButton = document.querySelector(".changes-button-js");
+      editButton.addEventListener("click", () => {
+        wrapperUpdateProfile.style.display = "block";
+      });
+      const closeButtons = document.querySelectorAll(
+        ".update-profile-back, .update-profile-exit"
+      );
+      const wrapperUpdateProfile = document.querySelector(
+        ".wraper-update-profile"
+      );
+      closeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          wrapperUpdateProfile.style.display = "none";
+        });
+      });
 
-
-          const editButton = document.querySelector(".changes-button-js");
-          editButton.addEventListener("click", () => {
-            wrapperUpdateProfile.style.display = "block";
-          });
-          const closeButtons = document.querySelectorAll(
-            ".update-profile-back, .update-profile-exit"
-          );
-          const wrapperUpdateProfile = document.querySelector(".wraper-update-profile");
-          closeButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-              wrapperUpdateProfile.style.display = "none";
-            });
-          });
-
-
-          document
-  .querySelector(".update-profile-form")
-  .addEventListener("submit", (e) => {
-    e.preventDefault();
-    const auth = getAuth();
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        const profileData = {
-          displayName: e.target.name.value,
-          surname: e.target.surname.value,
-          country: e.target.country.value,
-          city: e.target.city.value,
-          street: e.target.street.value,
-          message: e.target.message.value,
-          tel: e.target.tel.value,
-          secondTel: e.target.secondTel.value,
-          telegram: e.target.telegram.value,
-          checkboxes: [e.target.checkbox1.checked, e.target.checkbox2.checked],
-        };
-
-        UpdateUserProfile(user, profileData);
-      } else {
-        console.error("No user is logged in.");
-      }
-    });
-  });
-
-          
+      document
+        .querySelector(".update-profile-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          const auth = getAuth();
+          onAuthStateChanged(auth, (user) => {
+            if (user) {
+              const profileData = {
+                displayName: e.target.name.value,
+                surname: e.target.surname.value,
+                country: e.target.country.value,
+                city: e.target.city.value,
+                street: e.target.street.value,
+                message: e.target.message.value,
+                tel: e.target.tel.value,
+                secondTel: e.target.secondTel.value,
+                telegram: e.target.telegram.value,
+                checkboxes: [
+                  e.target.checkbox1.checked,
+                  e.target.checkbox2.checked,
+                ],
+              };
+      
         
-      } 
-    } catch (error) {
-      console.error(error);
+              UpdateUserProfile(user, profileData);
+            
+             
+            } else {
+              console.error("No user is logged in.");
+            }
+          });
+        });
     }
-  };
-
-
-
-
-
-
-
-
-
-
-
-
+  } catch (error) {
+    console.error(error);
+  }
+};
