@@ -1,10 +1,18 @@
 import { UpdateUserProfile } from "./auth";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { doc, getFirestore, getDoc } from "firebase/firestore/lite";
+import photoBIg from "/img/User-photo-big.png"
+import paint  from "/img/paint.svg"
+import love from "/img/love.svg"
+import people from "/img/people.svg"
+import telegram from "/img/telegram.png"
+import viber from "/img/viber.png"
+import whatsApp from "/img/whatsApp.png"
+
+
+
 
 const profileUpdateForm = document.querySelector(".update-profile-form");
-
-
 
 
 
@@ -46,11 +54,11 @@ const profileUpdateForm = document.querySelector(".update-profile-form");
           wrapperProfileCard.innerHTML = `
          
           
-                <img class="profile-user-photo-big" src="${userData.photoURL || 'img/User-photo-big.png'}" alt="" width="100%" />
+                <img class="profile-user-photo-big" src="${photoBIg}" alt="" width="100%" />
                 <ul class="edit-button-profile">
-                  <li><button class="edit-button changes-button-js"><img src="./img/paint.svg" alt=""></button></li>
-                  <li><button class="edit-button"><img src="./img/love.svg" alt=""> Збережене</button></li>
-                  <li><button class="edit-button"><img src="./img/people.svg" alt=""> Підписка</button></li>
+                  <li><button class="edit-button changes-button-js"><img src="${paint}" alt=""></button></li>
+                  <li><button class="edit-button"><img src=" ${love}" alt=""> Збережене</button></li>
+                  <li><button class="edit-button"><img src=" ${people}" alt=""> Підписка</button></li>
                 </ul>
                 <div class="profile-name-wrapper">
                   <h1 class="profile-user-name">${userData.displayName} ${userData.surname}</h1>
@@ -78,9 +86,9 @@ const profileUpdateForm = document.querySelector(".update-profile-form");
                     <a class="contact-telephone" href="tel:${userData.tel}">${userData.tel}</a>
                   </div>
                   <ul class="contact-list">
-                    <li class="contact-list-item"><img src="img/telegram.png" alt="" /></li>
-                    <li class="contact-list-item"><img src="img/viber.png" alt="" /></li>
-                    <li class="contact-list-item"><img src="img/whatsApp.png" alt="" /></li>
+                    <li class="contact-list-item"><img src=" ${telegram}" alt=""  /></li>
+                    <li class="contact-list-item"><img src="   ${viber}"  alt="" /></li>
+                    <li class="contact-list-item"><img src="${whatsApp}" alt="" /></li>
                   </ul>
                 </div>
           
